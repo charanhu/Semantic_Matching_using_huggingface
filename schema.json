@@ -1,0 +1,78 @@
+{
+    "Movie": {
+        "index": "INTEGER",
+        "MID": "TEXT",
+        "title": "TEXT",
+        "year": "TEXT",
+        "rating": "REAL",
+        "num_votes": "INTEGER"
+    },
+    "Genre": {
+        "index": "INTEGER",
+        "Name": "TEXT",
+        "GID": "INTEGER"
+    },
+    "Language": {
+        "index": "INTEGER",
+        "Name": "TEXT",
+        "LAID": "INTEGER"
+    },
+    "Country": {
+        "index": "INTEGER",
+        "Name": "TEXT",
+        "CID": "INTEGER"
+    },
+    "Location": {
+        "index": "INTEGER",
+        "Name": "TEXT",
+        "LID": "INTEGER"
+    },
+    "M_Location": {
+        "index": "INTEGER",
+        "MID": "TEXT",
+        "LID": "REAL",
+        "ID": "INTEGER"
+    },
+    "M_Country": {
+        "index": "INTEGER",
+        "MID": "TEXT",
+        "CID": "REAL",
+        "ID": "INTEGER"
+    },
+    "M_Language": {
+        "index": "INTEGER",
+        "MID": "TEXT",
+        "LAID": "INTEGER",
+        "ID": "INTEGER"
+    },
+    "M_Genre": {
+        "index": "INTEGER",
+        "MID": "TEXT",
+        "GID": "INTEGER",
+        "ID": "INTEGER"
+    },
+    "Person": {
+        "index": "INTEGER",
+        "PID": "TEXT",
+        "Name": "TEXT",
+        "Gender": "TEXT"
+    },
+    "M_Producer": {
+        "index": "INTEGER",
+        "MID": "TEXT",
+        "PID": "TEXT",
+        "ID": "INTEGER"
+    },
+    "M_Director": {
+        "index": "INTEGER",
+        "MID": "TEXT",
+        "PID": "TEXT",
+        "ID": "INTEGER"
+    },
+    "M_Cast": {
+        "index": "INTEGER",
+        "MID": "TEXT",
+        "PID": "TEXT",
+        "ID": "INTEGER"
+    }
+}
