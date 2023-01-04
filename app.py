@@ -1,6 +1,4 @@
 import streamlit as st
-
-!pip install transformers
 import torch.nn.functional as F
 import torch
 from transformers import AutoTokenizer, AutoModel
