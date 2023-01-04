@@ -1,1 +1,3 @@
-{"Movie": ["index", "MID", "title", "year", "rating", "num_votes", "type"], "Genre": ["index", "Name", "GID"], "Language": ["index", "Name", "LAID"], "Country": ["index", "Name", "CID"], "Location": ["index", "Name", "LID"], "M_Location": ["index", "MID", "LID", "ID"], "M_Country": ["index", "MID", "CID", "ID"], "M_Language": ["index", "MID", "LAID", "ID"], "M_Genre": ["index", "MID", "GID", "ID"], "Person": ["index", "PID", "Name", "Gender"], "M_Producer": ["index", "MID", "PID", "ID"], "M_Director": ["index", "MID", "PID", "ID"], "M_Cast": ["index", "MID", "PID", "ID"]}
+{train: [Row ID, Order ID, Order Date, Ship Date, Ship Mode, Customer ID, Customer Name, Segment, Country, City, State, Postal Code, Region, Product ID, Category, Sub-Category, Product Name, Sales
+    ]
+}

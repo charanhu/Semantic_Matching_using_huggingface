@@ -32,8 +32,8 @@ tokenizer = AutoTokenizer.from_pretrained(
 model = AutoModel.from_pretrained('sentence-transformers/all-MiniLM-L6-v2')
 
 # Load the model and tokenizer
-tokenizer_decoder = AutoTokenizer.from_pretrained("tscholak/3vnuv1vf")
-model_decoder = AutoModelForSeq2SeqLM.from_pretrained("tscholak/3vnuv1vf")
+tokenizer_decoder = AutoTokenizer.from_pretrained("tscholak/2jrayxos")
+model_decoder = AutoModelForSeq2SeqLM.from_pretrained("tscholak/2jrayxos")
 
 # Mean Pooling - Take attention mask into account for correct averaging
 
@@ -185,3 +185,4 @@ def main():
     conn.close()
 
 main()
+
