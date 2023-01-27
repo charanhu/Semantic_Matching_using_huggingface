@@ -1,0 +1,1379 @@
+question,sql
+"What is the highest points for the JBW chassis with a climax straight-4 engine, later than 1961?",SELECT MAX Points FROM table WHERE Chassis = jbw AND Engine = climax straight-4 AND Year > 1961
+What is the name of the engine in 1961?,SELECT Engine FROM table WHERE Year = 1961
+On which date were the 2003 Toronto Blue Jays 54-55?,SELECT Date FROM table WHERE Record = 54-55
+What is the average attendance of the Mariners' attendance when their record was 62-64?,SELECT AVG Attendance FROM table WHERE Opponent = mariners AND Record = 62-64
+"What was the score when the Blue Jays had an attendance larger than 9,430?","SELECT Score FROM table WHERE Attendance > 9,430"
+"What is the height of the fort peck dam which was built before 1968, is located in the united states and has a dam type of TE ?",SELECT Structure Height [m] FROM table WHERE Year < 1968 AND Type = te AND Country = united states AND Name = fort peck dam
+Who was the runner up before 2007?,SELECT Runner-up FROM table WHERE Season < 2007
+Which season was Manresa the champion?,SELECT Season FROM table WHERE Champion = manresa
+What year was the cosworth ca2006 2.4 v8 4 series used?,SELECT AVG Year FROM table WHERE Engine = cosworth ca2006 2.4 v8 4 series
+What engine did the mclaren mp4-20 use?,SELECT Engine FROM table WHERE Chassis = mclaren mp4-20
+What team used the toyota rvx-07 2.4 v8 engine,SELECT Entrant FROM table WHERE Engine = toyota rvx-07 2.4 v8
+in what year were 2 points scored?,SELECT MAX Year FROM table WHERE Points = 2
+What engine scored 17 points?,SELECT Engine FROM table WHERE Points = 17
+What years won when the To par is more than 13?,SELECT Year(s) won FROM table WHERE To par > 13
+What is the highest Total for Australia?,SELECT MAX Total FROM table WHERE Country = australia
+What is the average Total for the United States with a To par more than 6 and 1996 was won?,SELECT AVG Total FROM table WHERE Country = united states AND To par > 6 AND Year(s) won = 1996
+Raiders of the Lost Ark had pieces of 277 for what lowest number?,SELECT MIN Number FROM table WHERE Film = raiders of the lost ark AND Pieces = 277
+What is the number for Chauchilla Cemetery Battle with less than 511 pieces?,SELECT AVG Number FROM table WHERE Pieces < 511 AND Name = chauchilla cemetery battle
+What was the earliest year with 339 pieces and a number smaller than 7198?,SELECT MIN Released FROM table WHERE Pieces = 339 AND Number < 7198
+"What is the name of the competition that was held on August 20, 2004?","SELECT Competition FROM table WHERE Date = august 20, 2004"
+Where was the game held that resulted in a draw?,SELECT Venue FROM table WHERE Result = draw
+"Where was the game held on August 20, 2004?","SELECT Venue FROM table WHERE Date = august 20, 2004"
+Where was the game held that resulted in a score of 9-2?,SELECT Venue FROM table WHERE Score = 9-2
+"What is the sum of total with a Rank larger than 12, and a Gold larger than 4?",SELECT COUNT Total FROM table WHERE Rank > 12 AND Gold > 4
+"What is the smallest bronze with a Rank of 12, and a Silver smaller than 2?",SELECT MIN Bronze FROM table WHERE Rank = 12 AND Silver < 2
+"What is the smallest bronze with a Silver smaller than 2, and a Gold of 1, and a Nation of western isles, and a Total larger than 6?",SELECT MIN Bronze FROM table WHERE Silver < 2 AND Gold = 1 AND Nation = western isles AND Total > 6
+What is the average bronze with a total of 15 and less than 2 gold?,SELECT AVG Bronze FROM table WHERE Total = 15 AND Gold < 2
+"What is the total rank with a Nation of gotland, and a Gold larger than 23?",SELECT COUNT Rank FROM table WHERE Nation = gotland AND Gold > 23
+for a Goals Against greater than 42 what is the number of losses?,SELECT AVG Losses FROM table WHERE Goals Against > 42
+for goals less than 48 and 8 games played what is the count of losses?,SELECT MAX Losses FROM table WHERE Games Played = 8 AND Goals For < 48
+what is the number of losses with wins less than 4 and goals against more than 39?,SELECT COUNT Losses FROM table WHERE Goals Against > 39 AND Wins < 4
+What years does the school have that's in Makikihi?,SELECT Years FROM table WHERE Area = makikihi
+In what area is Morven School?,SELECT Area FROM table WHERE Name = morven school
+What years does the school have with a roll of 33?,SELECT Years FROM table WHERE Roll = 33
+What is the name of the actor who played Billy Elliot in the Final Cast with a Last Performance of 13 June 2009?,SELECT Name FROM table WHERE Status = final cast AND Last Performance = 13 june 2009
+What is the date of the First Performance of Rhys Kosakowski as Billy Elliot in the Original Cast?,SELECT First Performance FROM table WHERE Status = original cast AND Name = rhys kosakowski
+What is the Style of the First Performance of Billy Elliot on 15 November 2007?,SELECT Style FROM table WHERE First Performance = 15 november 2007
+What is the date of the Last Performance of Rarmian Newton as Billy Elliot?,SELECT Last Performance FROM table WHERE Name = rarmian newton
+What is the date of the Last Ballet Style Performance of Rhys kosakowski as Billy Elliot?,SELECT Last Performance FROM table WHERE Style = ballet AND Name = rhys kosakowski
+What is the date of the Last Performance of Billy Elliot with a Cast Status of past replacement?,SELECT Last Performance FROM table WHERE Status = past replacement
+"Gold of 0, and a Silver smaller than 3, and a Rank larger than 9, and a Total of 1 has how many numbers of bronze?",SELECT COUNT Bronze FROM table WHERE Gold = 0 AND Silver < 3 AND Rank > 9 AND Total = 1
+"Bronze larger than 2, and a Rank of 4, and a Total larger than 7 has how many numbers of gold?",SELECT AVG Gold FROM table WHERE Bronze > 2 AND Rank = 4 AND Total > 7
+"Bronze smaller than 3, and a Total smaller than 2, and a Gold larger than 1 has how many average silvers?",SELECT AVG Silver FROM table WHERE Bronze < 3 AND Total < 2 AND Gold > 1
+"Gold of 1, and a Total smaller than 4, and a Bronze smaller than 0 has the lowest silver?",SELECT MIN Silver FROM table WHERE Gold = 1 AND Total < 4 AND Bronze < 0
+Name the date for record 3-3,SELECT Date FROM table WHERE Record = 3-3
+Name the opponent on april 27,SELECT Opponent FROM table WHERE Date = april 27
+Name the record for april 22,SELECT Record FROM table WHERE Date = april 22
+Name the attendance on april 17,SELECT Attendance FROM table WHERE Date = april 17
+Name the date for postponed attendance,SELECT Date FROM table WHERE Attendance = postponed
+Name the record for april 6,SELECT Record FROM table WHERE Date = april 6
+What engine does Garvey Team Lotus use?,SELECT Engine FROM table WHERE Entrant = garvey team lotus
+What is the 2012 population for the state whose capital is Santa Fe?,SELECT Population est. (2012) FROM table WHERE Capital = santa fe
+What is the capital for the state that has the largest city of Burlington?,SELECT Capital FROM table WHERE Largest city = burlington
+How many populations have a capital of Montpelier and more than 1 House seat?,SELECT COUNT Population est. (2012) FROM table WHERE Capital = montpelier AND House seat(s) > 1
+"On games against the Devil Rays and a score of 2 - 1 (10), what was the attendance?",SELECT AVG Attendance FROM table WHERE Opponent = devil rays AND Score = 2 - 1 (10)
+"On the game that put the team at 34-44, what was the attendance?",SELECT SUM Attendance FROM table WHERE Record = 34-44
+What was the score of the game that put the team at 27-32?,SELECT Loss FROM table WHERE Record = 27-32
+In which venue did the competition on 11 October 2008 take place?,SELECT Venue FROM table WHERE Date = 11 october 2008
+What was the average number of silver medals won by France when they are ranked higher than 8?,SELECT AVG Silver FROM table WHERE Nation = france AND Rank > 8
+Who was their Opponent on April 26?,SELECT Opponent FROM table WHERE Date = april 26
+"What competition took place in Berlin, Germany?","SELECT Competition FROM table WHERE Venue = berlin, germany"
+Where were the Pan American Games held?,SELECT Venue FROM table WHERE Competition = pan american games
+What venue hosted the 2003 event?,SELECT Venue FROM table WHERE Year = 2003
+What game had the highest score and a time of 2:35?,SELECT MAX Game FROM table WHERE Time = 2:35
+"What game, played on October 17 in front of 49,347 fans, had the lowest score?","SELECT MIN Game FROM table WHERE Date = october 17 AND Attendance > 49,347"
+"What is the highest Total Foreign-born (1000) from a non EU state (1000) of 685 and a population (1000) smaller than 10,666?","SELECT MAX Total Foreign-born (1000) FROM table WHERE Born in a non EU state (1000) = 685 AND Total population (1000) > 10,666"
+"What is the highest number born in a none EU state (1000) from Denmark with a total population (1000) less than 5,534?","SELECT MAX Born in a non EU state (1000) FROM table WHERE Country = denmark AND Total population (1000) < 5,534"
+How many Foreign-born (1000) are from Sweden and born in some other EU state (1000) larger than 477?,SELECT SUM Total Foreign-born (1000) FROM table WHERE Country = sweden AND Born in other EU state (1000) > 477
+What is the greatest Total population (1000) from Sweden and born in a non EU state (1000) less than 859?,SELECT MAX Total population (1000) FROM table WHERE Country = sweden AND Born in a non EU state (1000) < 859
+"What is the greatest Born in other EU state (1000) with more than 1,380 foreign-born from Italy and a born in a non EU state (1000) less than 3,205?","SELECT MAX Born in other EU state (1000) FROM table WHERE Total Foreign-born (1000) > 1,380 AND Country = italy AND Born in a non EU state (1000) < 3,205"
+Whice race ended with a DNF?,SELECT Race FROM table WHERE Position = dnf
+Which race ended with a time of 01:46:59.69?,SELECT Race FROM table WHERE Time = 01:46:59.69
+What was the speed of the Superbike race?,SELECT Speed FROM table WHERE Race = superbike
+What was the speed of the race that ended in 2nd place and had a time of 01:13:03.39?,SELECT Speed FROM table WHERE Position = 2nd AND Time = 01:13:03.39
+How many sets were played in the 2011 Tournament in which there were 3R in 2007?,SELECT 2011 FROM table WHERE 2007 = 3r
+How many sets were in the 2011 Australian Open Tournament?,SELECT 2011 FROM table WHERE Tournament = australian open
+How many sets were played in the tournament that had 4R in 2011 and 2R in 2008?,SELECT 2009 FROM table WHERE 2011 = 4r AND 2008 = 2r
+"How many sets were played in the 2011 tournament, in which 2R were played in 2008?",SELECT 2011 FROM table WHERE 2008 = 2r
+Which tournament had 1R in 2013?,SELECT Tournament FROM table WHERE 2013 = 1r
+How many sets were played in 2007 at the tournament that had 4R in 2011 and 2R in 2009?,SELECT 2007 FROM table WHERE 2011 = 4r AND 2009 = 2r
+"What was the record at the game held on December 24, 2005?","SELECT Record FROM table WHERE Date = december 24, 2005"
+What was the date of the game held at Invesco Field?,SELECT Date FROM table WHERE Game site = invesco field
+"What was the NFL Recap of the game held on December 24, 2005?","SELECT NFL Recap FROM table WHERE Date = december 24, 2005"
+"Who was the opponent at the game held on December 24, 2005?","SELECT Opponent FROM table WHERE Date = december 24, 2005"
+"Which week's game had an attendance of 90,138?","SELECT Week FROM table WHERE Attendance = 90,138"
+What is the total years with more than 1 points?,SELECT SUM Year FROM table WHERE Points > 1
+When were there less than 1 point with a cosworth v8 engine in jolly club switzerland?,SELECT Year FROM table WHERE Points < 1 AND Engine = cosworth v8 AND Entrant = jolly club switzerland
+Which home team has an Away of (2-1)?,SELECT HOME FROM table WHERE AWAY = (2-1)
+Which away team has a playoff record of (0-0) and played against Sioux City Bandits?,SELECT AWAY FROM table WHERE PLYFF = (0-0) AND Opponent = sioux city bandits
+Which home team has a playoff record of (0-0) and played La Crosse Spartans?,SELECT HOME FROM table WHERE PLYFF = (0-0) AND Opponent = la crosse spartans
+What is the Plyff team that plays the Billings Outlaws?,SELECT PLYFF FROM table WHERE Opponent = billings outlaws
+"Which team has an overall playoff of (0-0), a home record of (0-1) and played the Green Bay Blizzard team?",SELECT OVERALL FROM table WHERE PLYFF = (0-0) AND HOME = (0-1) AND Opponent = green bay blizzard
+Which Overall has a playoff record of (0-1) and an away record of (1-1)?,SELECT OVERALL FROM table WHERE PLYFF = (0-1) AND AWAY = (1-1)
+Which opponent has a Date of april 14?,SELECT Opponent FROM table WHERE Date = april 14
+Which attendance has a Score of 3-5?,SELECT Attendance FROM table WHERE Score = 3-5
+Which Date has a Record of 7-9?,SELECT Date FROM table WHERE Record = 7-9
+"Which Date has an Attendance of 30,612?","SELECT Date FROM table WHERE Attendance = 30,612"
+"Which Date has an Opponent of @ mariners, and a Loss of hernández (0-1)?",SELECT Date FROM table WHERE Opponent = @ mariners AND Loss = hernández (0-1)
+Which Record that has a Loss of mays (0-3)?,SELECT Record FROM table WHERE Loss = mays (0-3)
+What week was the final score 6–26?,SELECT Week FROM table WHERE Final score = 6–26
+Who was the host team when the Miami Dolphins were the visiting team?,SELECT Host team FROM table WHERE Visiting team = miami dolphins
+What was the stadium that held that game after week 15?,SELECT Stadium FROM table WHERE Week > 15
+Name the most FA cup for championship of 18 and total of 19,SELECT MAX FA Cup FROM table WHERE Championship = 18 AND Total = 19
+Name the most league cups for total more than 19 and FA cups more than 6,SELECT MAX League Cup FROM table WHERE Total > 19 AND FA Cup > 6
+"What is the Score, when the Year is after 2007, and when the Country is England?",SELECT Score FROM table WHERE Year > 2007 AND Country = england
+"What is the latest Year, when the Venue is Lübker Golf Resort?",SELECT MAX Year FROM table WHERE Venue = lübker golf resort
+"What is the Score, when the Venue is Lübker Golf Resort?",SELECT Score FROM table WHERE Venue = lübker golf resort
+"What is the Venue, when the Winner is iain pyman?",SELECT Venue FROM table WHERE Winner = iain pyman
+Which final round had a first round of 20?,SELECT Final round FROM table WHERE First round = 20
+What final round had a weight of 245?,SELECT Final round FROM table WHERE Weight = 245
+What is the pos for the New York Knicks?,SELECT Pos. FROM table WHERE Team = new york knicks
+"What is the average first round for Utah Jazz team, with a weight smaller than 229?",SELECT AVG First round FROM table WHERE Weight < 229 AND Team = utah jazz
+What is the pos with weight less than 205?,SELECT Pos. FROM table WHERE Weight < 205
+What GSR class is associated with a 0-4-2t type?,SELECT GSR Class FROM table WHERE Type = 0-4-2t
+"Who manufactured fleet numbers of wlwr 2, 4, 11?","SELECT Manufacturer FROM table WHERE Fleet numbers = wlwr 2, 4, 11"
+Name the most overall for dwight freeney with round less than 1,SELECT MAX Overall FROM table WHERE Name = dwight freeney AND Round < 1
+Name the most pick # for overall of 204,SELECT MAX Pick # FROM table WHERE Overall = 204
+What was the date for game 6?,SELECT Date FROM table WHERE Game = 6
+Who was the visitor for the April 17 game?,SELECT Visitor FROM table WHERE Date = april 17
+Which chassis did fondmetal f1 spa use after 1990?,SELECT Chassis FROM table WHERE Year > 1990 AND Entrant = fondmetal f1 spa
+What points did the ilmor v10 engine get after 1992?,SELECT SUM Points FROM table WHERE Engine = ilmor v10 AND Year > 1992
+Name the place for tim clark,SELECT Place FROM table WHERE Player = tim clark
+Name the place for south africa and retief goosen,SELECT Place FROM table WHERE Country = south africa AND Player = retief goosen
+Name the To par for t10 place and score of 72-71=143,SELECT To par FROM table WHERE Place = t10 AND Score = 72-71=143
+Which Opponent has a Method of submission?,SELECT Opponent FROM table WHERE Method = submission
+Which Res has an Event of UFC 122?,SELECT Res. FROM table WHERE Event = ufc 122
+What was the record after the game against the St. Louis Cardinals?,SELECT Record FROM table WHERE Opponent = st. louis cardinals
+How many attendance numbers are associated with the site of Veterans Stadium before week 1?,SELECT COUNT Attendance FROM table WHERE Game site = veterans stadium AND Week < 1
+What is the future stem for the word that has an imperfect stem of hartzen?,SELECT Future stem FROM table WHERE Imperfect stem = hartzen
+What is the imperfect stem for the word that has a future stem of ikusiko?,SELECT Imperfect stem FROM table WHERE Future stem = ikusiko
+What is the short stem for the word that has a perfect stem of poztu?,SELECT Short stem FROM table WHERE Perfect stem = poztu
+"What is the imperfect stem of the word that means 'take away, remove'?","SELECT Imperfect stem FROM table WHERE Meaning = 'take away, remove'"
+What is the perfect stem for the word that has a future stem of emango?,SELECT Perfect stem FROM table WHERE Future stem = emango
+Who was the opponent of the runner-up after 2012?,SELECT Opponents FROM table WHERE Year > 2012 AND Outcome = runner-up
+Who was the partner of the winner after 2012?,SELECT Partner FROM table WHERE Year > 2012 AND Outcome = winner
+Name the outcome for 6 march 2000,SELECT Outcome FROM table WHERE Date = 6 march 2000
+"Name the date when the surface was clay and the score was 6–1, 6–2 and runner-up","SELECT Date FROM table WHERE Surface = clay AND Score = 6–1, 6–2 AND Outcome = runner-up"
+Name the score for 26 may 1997,SELECT Score FROM table WHERE Date = 26 may 1997
+Name the tournament for outcome of winner and clay surface with opponent of aranza salut,SELECT Tournament FROM table WHERE Outcome = winner AND Surface = clay AND Opponent = aranza salut
+Who did the Blue Jays lose to on July 16?,SELECT Loss FROM table WHERE Date = july 16
+"What country was the winner in season 1997/98 when Russia was runner-up but had the win for women, while Italy came in third?",SELECT Winner FROM table WHERE Runner-up = russia AND Winner Women = russia AND Third = italy AND Season = 1997/98
+"Who had the win for men in season 1988/89 when Soviet Union had the women's win, and Norway came in third overall?",SELECT Winner Men FROM table WHERE Winner Women = soviet union AND Third = norway AND Season = 1988/89
+Who had the men's win in the 1992/93 season?,SELECT Winner Men FROM table WHERE Season = 1992/93
+In which season did Sweden get third overall while Russia had the men's win?,SELECT Season FROM table WHERE Third = sweden AND Winner Men = russia
+Which country was third overall when Russia had the men's win in season 2012/13?,SELECT Third FROM table WHERE Winner Men = russia AND Season = 2012/13
+Who had the women's win when Norway was the winner overall in season 2001/02?,SELECT Winner Women FROM table WHERE Winner = norway AND Season = 2001/02
+How many laps did Duke Nelson complete when his qualifying time was 122.951?,SELECT SUM Laps FROM table WHERE Qual = 122.951
+How many laps did Duke Nelson complete when his qualifying time was 136.498?,SELECT MAX Laps FROM table WHERE Qual = 136.498
+What entrant drove a car with a Moore chassis prior to 1953?,SELECT Entrant FROM table WHERE Year < 1953 AND Chassis = moore
+What opponent was in the match that resulted in 1-2?,SELECT Opponent team FROM table WHERE Result = 1-2
+Which tournament has a value of a for 2009?,SELECT Tournament FROM table WHERE 2009 = a
+"What is the value for 2011 when `a` is the value for 2009, and 4r is the value for 2013?",SELECT 2011 FROM table WHERE 2009 = a AND 2013 = 4r
+"What is the result for Chicago, Illinois?","SELECT Result FROM table WHERE Hometown = chicago, illinois"
+"How much did the Hydra team from Bronx, New York raise?","SELECT Raised FROM table WHERE Original Team = hydra AND Hometown = bronx, new york"
+Name the attendance for atlanta braves opponent for september 9,SELECT AVG Attendance FROM table WHERE Opponent = atlanta braves AND Date = september 9
+What were the years active of the player from New Zealand with more than 11 caps?,SELECT Years Active FROM table WHERE Caps > 11 AND Country = new zealand
+How many goals did a player from France have?,SELECT Goals FROM table WHERE Country = france
+How many goals did a player active since 2006 have?,SELECT Goals FROM table WHERE Years Active = 2006
+What is the transfer window of the Leeds United source with a move from Motherwell?,SELECT Transfer window FROM table WHERE Source = leeds united AND Moving from = motherwell
+What is the source of a move from Swindon Town?,SELECT Source FROM table WHERE Moving from = swindon town
+What is the name of the country that has a transfer window of winter with an end after 2009 and moving from Bolton Wanderers?,SELECT Country FROM table WHERE Transfer window = winter AND Ends > 2009 AND Moving from = bolton wanderers
+What is the transfer fee of the move from Port Vale?,SELECT Transfer fee FROM table WHERE Moving from = port vale
+"What is the type of the Leeds United source, winter transfer window and moving from Northampton town?",SELECT Type FROM table WHERE Source = leeds united AND Transfer window = winter AND Moving from = northampton town
+What is the source of the move from Port Vale?,SELECT Source FROM table WHERE Moving from = port vale
+What is the average silver medals a team ranked 12 with less than 2 bronze has?,SELECT AVG Silver FROM table WHERE Rank = 12 AND Bronze < 2
+"What is the average rank Finland, which has 1 bronze, more than 1 silver, and less than 0 gold, has?",SELECT AVG Rank FROM table WHERE Bronze = 1 AND Silver > 1 AND Nation = finland AND Gold < 0
+"What is the lowest amount of gold a team with less than 2 total medals, ranked 17, and more than 0 silver medals, has?",SELECT MIN Gold FROM table WHERE Total < 2 AND Rank = 17 AND Silver > 0
+Who is the captain of the manchester city team?,SELECT Captain FROM table WHERE Team = manchester city
+Which captain's manager is Joe Royle?,SELECT Captain FROM table WHERE Manager = joe royle
+What year had a Women's doubles and Women's singles with no competition?,SELECT Year FROM table WHERE Women's doubles = no competition AND Women's singles = no competition
+The year the Women's singles was won by Christine Magnusson who was the winner of the Men's singles?,SELECT Men's singles FROM table WHERE Women's singles = christine magnusson
+"In 1982, when the Men's doubles had no competition who won the Women's singles?",SELECT Women's singles FROM table WHERE Men's doubles = no competition AND Year = 1982
+When Steve Baddeley won the Men's singles who won the Women's singles?,SELECT Women's singles FROM table WHERE Men's singles = steve baddeley
+When Marja Ridder won the Women's singles who won the Men's singles?,SELECT Men's singles FROM table WHERE Women's singles = marja ridder
+Name the average founded with joined less than 2008,SELECT AVG Founded FROM table WHERE Joined < 2008
+What was the role for Challenge TV?,SELECT Role FROM table WHERE Broadcaster = challenge tv
+Who was the broadcaster in 2003?,SELECT Broadcaster FROM table WHERE Year = 2003
+What was the role for BBC1?,SELECT Role FROM table WHERE Broadcaster = bbc1
+What was the title with episode 8?,SELECT Title FROM table WHERE Episodes = 8
+What was the title for Sky One in 2005?,SELECT Title FROM table WHERE Broadcaster = sky one AND Year = 2005
+What was Yardley-BRM's points high after 1971?,SELECT MAX Points FROM table WHERE Entrant = yardley-brm AND Year > 1971
+What year did Austria-Marlboro BRM get more than 0 points?,SELECT AVG Year FROM table WHERE Entrant = austria-marlboro brm AND Points > 0
+Which entrant has a Mclaren m7c Chassis?,SELECT Entrant FROM table WHERE Chassis = mclaren m7c
+Which province has gmp for an IATA?,SELECT Province/Region FROM table WHERE IATA = gmp
+Which airport is in Tokyo and has an ICAO of rjtt?,SELECT Airport FROM table WHERE City = tokyo AND ICAO = rjtt
+Which country is the ICAO vvts?,SELECT Country FROM table WHERE ICAO = vvts
+What airport is in Vietnam?,SELECT Airport FROM table WHERE Country = vietnam
+Which airport has an IATA of hgh?,SELECT Airport FROM table WHERE IATA = hgh
+Which city has an IATA of tsa?,SELECT City FROM table WHERE IATA = tsa
+Where was the starting position when there were 182 laps?,SELECT Start FROM table WHERE Laps = 182
+"How many laps were completed with a start of 33, and a finish of 18?",SELECT MAX Laps FROM table WHERE Start = 33 AND Finish = 18
+"When completing 182 laps, what was the qual.?",SELECT Qual FROM table WHERE Laps = 182
+What is the total number of laps that were completed in 1949?,SELECT COUNT Laps FROM table WHERE Year = 1949
+What is the fewest number of laps completed by a rank 32?,SELECT MIN Laps FROM table WHERE Rank = 32
+On what date was the individual time trial?,SELECT Date FROM table WHERE Type = individual time trial
+When was tony parker (guard) born?,SELECT MAX Year born FROM table WHERE Position = guard AND Player = tony parker
+"What team does tariq kirksay, a guard who is taller than 1.8M and born before 1982, represent?",SELECT Current Club FROM table WHERE Height > 1.8 AND Position = guard AND Year born < 1982 AND Player = tariq kirksay
+What player is a center born in 1977?,SELECT Player FROM table WHERE Position = center AND Year born = 1977
+What is the extra result of the 4th game?,SELECT Extra FROM table WHERE Result = 4th
+What extra is from after 2009?,SELECT Extra FROM table WHERE Year > 2009
+Who was the Kit manufacturer that was has shirts sponsored by Walkers?,SELECT Kit manufacturer FROM table WHERE Shirt sponsor = walkers
+"Which team is the kit manufacturer Umbro, and the captain Gary Mabbutt?",SELECT Team FROM table WHERE Kit manufacturer = umbro AND Captain = gary mabbutt
+"Who is the captain for the manufacturer Pony, and the manager Harry Redknapp?",SELECT Captain FROM table WHERE Kit manufacturer = pony AND Manager = harry redknapp
+Who is the shirt sponsor for the manufacturer Nike?,SELECT Shirt sponsor FROM table WHERE Kit manufacturer = nike
+Which team has the team captain Jon Newsome?,SELECT Team FROM table WHERE Captain = jon newsome
+What was the GSR number on the date 1883?,SELECT GSR Nos. FROM table WHERE Date made = 1883
+What was the quantity of the fleet information for DWWR 50 and 51?,SELECT Quantity made FROM table WHERE Fleet numbers = dwwr 50 and 51
+What was the quantity for Inchicore of J7?,SELECT Quantity made FROM table WHERE Inchicore Class = j7
+What's the highest round for a defensive tackle position?,SELECT MAX Round FROM table WHERE Position = defensive tackle
+What is the smallest round associated with Samuel Scheschuk?,SELECT MIN Round FROM table WHERE Name = samuel scheschuk
+How many people were in attendance on the day there was a 30-22 victory?,SELECT COUNT Attendance FROM table WHERE Record = 30-22
+Who lost on June 29?,SELECT Loss FROM table WHERE Date = june 29
+What is the score with lost as the result?,SELECT Score FROM table WHERE Result = lost
+Which date has china as the venue?,SELECT Date FROM table WHERE Venue = china
+"Which score has a competition of 1997 dunhill cup malaysia and february 23, 1997 as the date?","SELECT Score FROM table WHERE Competition = 1997 dunhill cup malaysia AND Date = february 23, 1997"
+Which competition has 4-0 as the score?,SELECT Competition FROM table WHERE Score = 4-0
+"What score has october 16, 2000 as the date?","SELECT Score FROM table WHERE Date = october 16, 2000"
+What is the result of the competition of 2000 afc asian cup group stages?,SELECT Result FROM table WHERE Competition = 2000 afc asian cup group stages
+What is the motive before 2007?,SELECT Motive FROM table WHERE Year < 2007
+What is the result of the directorial debut of the year award?,SELECT Result FROM table WHERE Category = directorial debut of the year
+What is the category for the premios lo nuestro award?,SELECT Category FROM table WHERE Award = premios lo nuestro
+"What's the average number of Laps, that had a start of 25, with a Qual of 138.063?",SELECT AVG Laps FROM table WHERE Start = 25 AND Qual = 138.063
+What year had the Finish of 12?,SELECT Year FROM table WHERE Finish = 12
+In what year did a Qual of 141.105 with a Start of 25 happen?,SELECT Year FROM table WHERE Start = 25 AND Qual = 141.105
+What year had the largest number of laps over 196?,SELECT Year FROM table WHERE Laps > 196
+Who are the runners-up in 1996?,SELECT Runners-up FROM table WHERE Year = 1996
+What is the average roll of a school with state authority and a decile of 9?,SELECT AVG Roll FROM table WHERE Authority = state AND Decile = 9
+Which area has state authority and a roll fewer than 18?,SELECT Area FROM table WHERE Authority = state AND Roll < 18
+What is the roll for the school with state authority and a decile of 9?,SELECT Roll FROM table WHERE Authority = state AND Decile = 9
+What is the average decile of Westport South School?,SELECT AVG Decile FROM table WHERE Name = westport south school
+What is the top rank with a time of 2:19.86?,SELECT MAX Rank FROM table WHERE Time = 2:19.86
+Who had a lane number smaller than 7 and a time of 2:19.86?,SELECT Name FROM table WHERE Lane < 7 AND Time = 2:19.86
+What was Liu Limin's time in heat 4?,SELECT Time FROM table WHERE Heat = 4 AND Name = liu limin
+What was the result of the friendly competition?,SELECT Result FROM table WHERE Competition = friendly
+What was the start source that ended on 4 May?,SELECT Start Source FROM table WHERE Ended = 4 may
+What is the Loan Club from Eng that ended on 22 February?,SELECT Loan Club FROM table WHERE Country = eng AND Ended = 22 february
+What is the End Source from the Hartlepool United Loan Club?,SELECT End Source FROM table WHERE Loan Club = hartlepool united
+When did the loan that Ended on 15 January Start?,SELECT Started FROM table WHERE Ended = 15 january
+What nation had more than 97 Gold Medals and fewer than 332 Silver Medals?,SELECT SUM Total FROM table WHERE Gold > 97 AND Silver < 332
+What nation had 135 Bronze medals?,SELECT COUNT Bronze FROM table WHERE Total = 135
+What is the area of Ulim with less than 30 villages?,SELECT AVG Land area (Km 2 ) FROM table WHERE Capital = ulim AND Villages < 30
+What is the name of the station that is currently demolished with the Shepparton line in Tabilk?,SELECT Name FROM table WHERE Current Status = demolished AND Line = shepparton line AND Location = tabilk
+What is the line of Mangalore station?,SELECT Line FROM table WHERE Name = mangalore
+What is the line of the station in Toolamba that is currently demolished and closed in the late 1970s?,SELECT Line FROM table WHERE Current Status = demolished AND Closed = late 1970s AND Location = toolamba
+What is the name of the station in Toolamba that is currently demolished?,SELECT Name FROM table WHERE Current Status = demolished AND Location = toolamba
+What club began in 1976?,SELECT Current Club FROM table WHERE Year born = 1976
+What player was born in 1976 and is smaller than 2.03?,SELECT Player FROM table WHERE Height < 2.03 AND Year born = 1976
+What player was born in 1978 and smaller than 1.92?,SELECT Current Club FROM table WHERE Height < 1.92 AND Year born > 1978
+Which year did The Adventures of Tintin come out?,SELECT SUM Year FROM table WHERE Film = the adventures of tintin
+What year did the movie Rango come out?,SELECT AVG Year FROM table WHERE Film = rango
+What is the rank associated with a Height feet / m of 427 / 130?,SELECT Rank FROM table WHERE Height feet / m = 427 / 130
+What was the address in 1974?,SELECT Address FROM table WHERE Year = 1974
+What was the earliest year for a car with 3 points and Cooper t20 chassis?,SELECT MIN Year FROM table WHERE Points = 3 AND Chassis = cooper t20
+"If time is 2:13 and attendance is less than 56,335, what is the largest game number?","SELECT MAX Game FROM table WHERE Attendance < 56,335 AND Time = 2:13"
+Game 2 has how much attendance?,SELECT Attendance FROM table WHERE Game = 2
+What was the average attendance on October 12?,SELECT AVG Attendance FROM table WHERE Date = october 12
+"What is the name of the Home Captain for 23,24,25,26 july 1992?","SELECT Home captain FROM table WHERE Date = 23,24,25,26 july 1992"
+Who is the Away Captain at headingley?,SELECT Away captain FROM table WHERE Venue = headingley
+"Where was a game played on 23,24,25,26 july 1992?","SELECT Venue FROM table WHERE Date = 23,24,25,26 july 1992"
+Who was the Away Captain at The Oval?,SELECT Away captain FROM table WHERE Venue = the oval
+"Who is the Home Captain for 23,24,25,26 july 1992?","SELECT Home captain FROM table WHERE Date = 23,24,25,26 july 1992"
+"What is the result for 23,24,25,26 july 1992?","SELECT Result FROM table WHERE Date = 23,24,25,26 july 1992"
+"What is the maximum number of losses that the Minnesota Kicks had after 1979 with an average attendance of 16,605?","SELECT MAX Lost FROM table WHERE Season > 1979 AND Avg. Attend. = 16,605"
+Which season did the Minnesota Kicks lose 13 games and scored 156 points?,SELECT COUNT Season FROM table WHERE Lost = 13 AND Points = 156
+"Which season did the Kicks have more than 137 points with 13 losses and an average attendance larger than 23,121?","SELECT AVG Season FROM table WHERE Points > 137 AND Avg. Attend. > 23,121 AND Lost = 13"
+Name the men's singles for when doubles are suresh goel morin d'souza,SELECT Men's singles FROM table WHERE Mixed doubles = suresh goel morin d'souza
+"Name the highest year for dipu ghosh raman ghosh, and sarojini gogte sunila apte",SELECT MAX Year FROM table WHERE Men's doubles = dipu ghosh raman ghosh AND Women's doubles = sarojini gogte sunila apte
+"What losses did racing de santander, that scored less than 68 goals, had a goal difference of less than 23 and 10 draws?",SELECT MAX Losses FROM table WHERE Goals against < 68 AND Goal Difference < 23 AND Draws = 10 AND Club = racing de santander
+What is the highest goal difference that the club with 33-5 points and less than 12 wins?,SELECT MAX Goal Difference FROM table WHERE Points = 33-5 AND Wins < 12
+"What reactor type that has a commercial operation of —, and a tianwan-7 unit?",SELECT Reactor type FROM table WHERE Commercial operation = — AND Unit = tianwan-7
+"What was the net capacity with a gross capacity of 1,126 mw, and a Unit of tianwan-4?","SELECT Net capacity FROM table WHERE Gross capacity = 1,126 mw AND Unit = tianwan-4"
+"What commercial operation that has a gross capacity of 1,126 mw, and a unit of tianwan-4?","SELECT Commercial operation FROM table WHERE Gross capacity = 1,126 mw AND Unit = tianwan-4"
+"What score has won as the result on the date of December 14, 2004?","SELECT Score FROM table WHERE Result = won AND Date = december 14, 2004"
+What date has won as the result and 2-1 as the score with a competition of 2004 tiger cup third place match?,SELECT Date FROM table WHERE Result = won AND Score = 2-1 AND Competition = 2004 tiger cup third place match
+"What score has january 15, 2005 as the date?","SELECT Score FROM table WHERE Date = january 15, 2005"
+What date has lost as the result and a competition of friendly with 1-2 as the score?,SELECT Date FROM table WHERE Result = lost AND Competition = friendly AND Score = 1-2
+"What score has january 3, 2005 as the date?","SELECT Score FROM table WHERE Date = january 3, 2005"
+"What competition has may 5, 2001 as the date?","SELECT Competition FROM table WHERE Date = may 5, 2001"
+Who did the team lose to on September 8?,SELECT Loss FROM table WHERE Date = september 8
+What is the order for a red list of 7 in the didelphidae family?,SELECT Order FROM table WHERE Red List = 7 AND Family = didelphidae
+What is the name with a red lest less than 7?,SELECT Name FROM table WHERE Red List < 7
+What family has the name of eastern cottontail?,SELECT Family FROM table WHERE Name = eastern cottontail
+"What red list is in the artiodactyla order and the cervidae family with a Species Authority of odocoileus virginianus zimmermann, 1780?","SELECT Red List FROM table WHERE Order = artiodactyla AND Family = cervidae AND Species Authority = odocoileus virginianus zimmermann, 1780"
+"What is the name for the red list of 7, the artiodactyla order, and Species Authority of cervus elaphus linnaeus, 1758?","SELECT Name FROM table WHERE Red List = 7 AND Order = artiodactyla AND Species Authority = cervus elaphus linnaeus, 1758"
+What is the original name of the film that used the title Olympics 40 in nomination?,SELECT Original name FROM table WHERE Film title used in nomination = olympics 40
+What title did the film from Colombia use in its nomination?,SELECT Film title used in nomination FROM table WHERE Country = colombia
+Who directed the film originally named Bye Bye Brazil in Portuguese?,SELECT Director FROM table WHERE Language = portuguese AND Original name = bye bye brazil
+What country is the film directed by Jean-Luc Godard in French from?,SELECT Country FROM table WHERE Language = french AND Director = jean-luc godard
+Who is the director of the film in Italian?,SELECT Director FROM table WHERE Language = italian
+What is the status of Aden Theobald from the hometown of London?,SELECT Status FROM table WHERE Hometown = london AND Name = aden theobald
+What is Hasan Shah's hometown?,SELECT Hometown FROM table WHERE Name = hasan shah
+What series was Sam Evans on?,SELECT Series FROM table WHERE Name = sam evans
+What is the name of the person from series bb1 with a hometown of Bolton?,SELECT Name FROM table WHERE Series = bb1 AND Hometown = bolton
+What is the occupation of the person with a hometown of Hampshire?,SELECT Occupation FROM table WHERE Hometown = hampshire
+Which election has a 1st Member of constituency abolished?,SELECT Election FROM table WHERE 1st Member = constituency abolished
+Which 1st Party has an Election of 1849 by-election?,SELECT 1st Party FROM table WHERE Election = 1849 by-election
+"Which 1st Party has a 2nd Party of conservative, and a 1st Member of william wither bramston beach?",SELECT 1st Party FROM table WHERE 2nd Party = conservative AND 1st Member = william wither bramston beach
+Which 2nd Party has a 1st Member of william wither bramston beach?,SELECT 2nd Party FROM table WHERE 1st Member = william wither bramston beach
+Which 2nd Party has an Election of 1837?,SELECT 2nd Party FROM table WHERE Election = 1837
+Which 1st Party has a 1st Member of william wither bramston beach?,SELECT 1st Party FROM table WHERE 1st Member = william wither bramston beach
+"Which Type has a Fleet numbers of 2–8, 91–92, 97–100?","SELECT Type FROM table WHERE Fleet numbers = 2–8, 91–92, 97–100"
+When has a Note of 45/48 renumbered 15/16; two sold to sl&ncr?,SELECT Date made FROM table WHERE Notes = 45/48 renumbered 15/16; two sold to sl&ncr
+"What Willingshain is Kirchheim 1,126?","SELECT Willingshain FROM table WHERE Kirchheim = 1,126"
+What Rotterterrode has a Reimboldsh 80?,SELECT Rotterterode FROM table WHERE Reimboldsh. = 80
+What Reimboldsh has Willingshain of 268 and Gersdorf 194?,SELECT Reimboldsh. FROM table WHERE Willingshain = 268 AND Gersdorf = 194
+What Kemmerode has a Gersforf of 39?,SELECT Kemmerode FROM table WHERE Gersdorf = 39
+What Gershausen has a Willingshain of 243 and Reckerode of 224?,SELECT Gershausen FROM table WHERE Willingshain = 243 AND Reckerode **** = 224
+What Willinghshain has Reimboldsh of 101?,SELECT Willingshain FROM table WHERE Reimboldsh. = 101
+"What is the pts for 2004, and the ro event?",SELECT Pts. FROM table WHERE Year = 2004 AND Event = ro
+"What is the pos from 2003, and the f event?",SELECT Pos. FROM table WHERE Year = 2003 AND Event = f
+What is the Catalog Number is for the Japan region?,SELECT Catalog FROM table WHERE Region = japan
+"What is the date on Catalog 540,934-2?","SELECT Date FROM table WHERE Catalog = 540,934-2"
+What is the region for Catalog amlh 66078 in stereo lp format?,SELECT Region FROM table WHERE Format = stereo lp AND Catalog = amlh 66078
+What is the region for Catalog amlh 66078 in stereo lp format?,SELECT Region FROM table WHERE Format = stereo lp AND Catalog = amlh 66078
+What is the Catalog number for the region of Japan?,SELECT Catalog FROM table WHERE Region = japan
+What is the region of the Catalog that is in cd format and has a label a&m/canyon?,SELECT Region FROM table WHERE Format = cd AND Label = a&m/canyon
+What is the original team that was Hired by Trump (5-19-2005)?,SELECT Original Team FROM table WHERE Result = hired by trump (5-19-2005)
+Who is the candidate that had 10 fired in week 2 (1-27-2005)?,SELECT Candidate FROM table WHERE Result = 10 fired in week 2 (1-27-2005)
+What is the hometown of the candidate that had a result of 10 fired in week 6 (2-24-2005)?,SELECT Hometown FROM table WHERE Result = 10 fired in week 6 (2-24-2005)
+Which totals tournament has the lowest wins and top-25 less than 4?,SELECT MIN Wins FROM table WHERE Tournament = totals AND Top-25 < 4
+What is the average number of events of PGA Championship tournaments with a top-5 less than 0?,SELECT AVG Events FROM table WHERE Top-10 = 0 AND Tournament = pga championship AND Top-5 < 0
+Name the competition for stephanie cox on 2011-07-02,SELECT Competition FROM table WHERE Assist/pass = stephanie cox AND Date = 2011-07-02
+Name the lineup for washington dc,SELECT Lineup FROM table WHERE Location = washington dc
+Name the date for faro,SELECT Date FROM table WHERE Location = faro
+"What is the highest rank that has fao as a source and an out greater than 50, with dietary calorie intake as the name?",SELECT MAX Rank FROM table WHERE Source = fao AND Out of > 50 AND Name = dietary calorie intake
+What is the average rank that has cia world factbook as the source and a year prior to 2005?,SELECT AVG Rank FROM table WHERE Source = cia world factbook AND Year < 2005
+What were the least points with a Coloni FC88 chassis?,SELECT MIN Points FROM table WHERE Chassis = coloni fc88
+How many years was the chassis a Coloni C3?,SELECT COUNT Year FROM table WHERE Chassis = coloni c3
+What was the most points for Coloni Spa?,SELECT MAX Points FROM table WHERE Entrant = coloni spa
+Which team 1 had a team 2 of Asante Kotoko?,SELECT Team 1 FROM table WHERE Team 2 = asante kotoko
+Which team 1 had a team 2 of Hafia FC?,SELECT Team 1 FROM table WHERE Team 2 = hafia fc
+What was the aggregate for the match with a team 2 of Hafia FC?,SELECT Agg. FROM table WHERE Team 2 = hafia fc
+Who was the team 1 that had a 1st leg score of 0-1?,SELECT Team 1 FROM table WHERE 1st leg = 0-1
+Which team 2 had an aggregate score of 3-4 and a 2nd leg score of 0-2?,SELECT Team 2 FROM table WHERE Agg. = 3-4 AND 2nd leg = 0-2
+When was J.P. Viernes' last performance?,SELECT Last Performance FROM table WHERE Name = j.p. viernes
+What's the Chinese name of the wudaokou station?,SELECT Chinese Name FROM table WHERE Station Name = wudaokou
+"What's the transfer distance (km) larger than 36.5, at the station of guangximen?",SELECT Transfers FROM table WHERE Distance (km) > 36.5 AND Station Name = guangximen
+The Chinese Name of 上地 shàngdì belongs to what station?,SELECT Station Name FROM table WHERE Chinese Name = 上地 shàngdì
+Name the runner-up for margin of victory of 3 strokes,SELECT Runner(s)-up FROM table WHERE Margin of victory = 3 strokes
+Name the date with margin of victory of 1 stroke and tournament of legend financial group classic,SELECT Date FROM table WHERE Margin of victory = 1 stroke AND Tournament = legend financial group classic
+Name the runner-up for margin of victory of 1 stroke and tournament of legend financial group classic,SELECT Runner(s)-up FROM table WHERE Margin of victory = 1 stroke AND Tournament = legend financial group classic
+Name the margin of victory for jonas blixt,SELECT Margin of victory FROM table WHERE Runner(s)-up = jonas blixt
+Which Party has a Office of majority floor leader,SELECT Party FROM table WHERE Office = majority floor leader
+Which Office has a Representative of scott pelath?,SELECT Office FROM table WHERE Representative = scott pelath
+"Which Office has a Party of rep, and a Representative of brian bosma?",SELECT Office FROM table WHERE Party = rep AND Representative = brian bosma
+"Which Residence has a Party of dem, and a Representative of linda lawson?",SELECT Residence FROM table WHERE Party = dem AND Representative = linda lawson
+Which Party has a Representative of brian bosma?,SELECT Party FROM table WHERE Representative = brian bosma
+"Which Office has a Party of dem, and a First Elected of 1991†?",SELECT Office FROM table WHERE Party = dem AND First Elected = 1991†
+what college has paul seiler as a player?,SELECT College FROM table WHERE Player = paul seiler
+How many laps were in 1955?,SELECT COUNT Laps FROM table WHERE Year = 1955
+What was the finish with less than 200 laps in 1953?,SELECT Finish FROM table WHERE Laps < 200 AND Year = 1953
+What was the rank in 1955?,SELECT Rank FROM table WHERE Year = 1955
+What was the sum of laps in 1954?,SELECT SUM Laps FROM table WHERE Year = 1954
+What rank had less than 200 laps with a finish of 26?,SELECT Rank FROM table WHERE Laps < 200 AND Finish = 26
+What's the average wins of those games with 3 podiums?,SELECT AVG Wins FROM table WHERE Podiums = 3
+Who was team 1 when team 2 was Young Africans?,SELECT Team 1 FROM table WHERE Team 2 = young africans
+What was the 2nd leg score for Al-Merrikh as team 2?,SELECT 2nd leg FROM table WHERE Team 2 = al-merrikh
+"What is the Date, when the Opponent is Gisela Dulko?",SELECT Date FROM table WHERE Opponent = gisela dulko
+"What is the Tournament, when the Opponent is Patricia Mayr-Achleitner?",SELECT Tournament FROM table WHERE Opponent = patricia mayr-achleitner
+what is the result of the competition in 2006 world cup qualification?,SELECT Result FROM table WHERE Competition = 2006 world cup qualification
+What nation started in lane 3 of heat 2?,SELECT Nationality FROM table WHERE Heat = 2 AND Lane = 3
+"Which Tied has Matches of 1, and a Lost of 0, and a Team of durham?",SELECT Tied FROM table WHERE Matches = 1 AND Lost = 0 AND Team = durham
+Which Team has a Winner of 1?,SELECT Team FROM table WHERE Winner = 1
+What is the % Won of Team of durham,SELECT % Won FROM table WHERE Team = durham
+Which Match has the percentage won 52.38?,SELECT Matches FROM table WHERE % Won = 52.38
+How many points has more than 15 wins and less than 10 losses?,SELECT Points FROM table WHERE Wins > 15 AND Losses < 10
+What is the total goal difference with more than 38 played and more than 47 goals against?,SELECT SUM Goal Difference FROM table WHERE Goals against > 47 AND Played > 38
+What is the average draws with more than 38 played?,SELECT AVG Draws FROM table WHERE Played > 38
+"what is the score when the attendance is more than 11,062, home is columbus the decision is denis on october 7?","SELECT Score FROM table WHERE Attendance > 11,062 AND Home = columbus AND Decision = denis AND Date = october 7"
+What is the name of the partner who played in the final against Lucas Arnold Ker Martín García?,SELECT Partner FROM table WHERE Opponents in final = lucas arnold ker martín garcía
+Who swam in a lane less than 6 and finished with a time of 2:11.02?,SELECT Name FROM table WHERE Lane < 6 AND Time = 2:11.02
+What is the Film title used in nomination of Mig Og Charly?,SELECT Film title used in nomination FROM table WHERE Original name = mig og charly
+Who is the Director that has a Film title of nick carter in prague?,SELECT Director FROM table WHERE Film title used in nomination = nick carter in prague
+Which Language Director of nagisa oshima use in his film?,SELECT Language FROM table WHERE Director = nagisa oshima
+Who is the Director that speaks dutch?,SELECT Director FROM table WHERE Language = dutch
+What is the Original name of empire of passion?,SELECT Original name FROM table WHERE Film title used in nomination = empire of passion
+Name the start date with party of pd,SELECT Start date FROM table WHERE Party = pd
+Name the minister for end date of 31 july 2004,SELECT Minister FROM table WHERE End date = 31 july 2004
+Name the party with end date of 22 november 1980,SELECT Party FROM table WHERE End date = 22 november 1980
+Name the end date for robert goebbels,SELECT End date FROM table WHERE Minister = robert goebbels
+Name the start date with lsap and end date of present day,SELECT Start date FROM table WHERE Party = lsap AND End date = present day
+What is the acceleration 1-100km/h when the name is 1.5 dci?,SELECT Acceleration 0–100km/h FROM table WHERE Name = 1.5 dci
+what is the power when the capacity is 898cc?,SELECT Power FROM table WHERE Capacity = 898cc
+what is the capacity when the code is d4f bi-fuel 732?,SELECT Capacity FROM table WHERE Code = d4f bi-fuel 732
+what is the power when the name is 1.2 16v lpg?,SELECT Power FROM table WHERE Name = 1.2 16v lpg
+what is the capacity when the name is 1.2 16v?,SELECT Capacity FROM table WHERE Name = 1.2 16v
+what is the capacity when the acceleration 1-100km/h is 11.1 s?,SELECT Capacity FROM table WHERE Acceleration 0–100km/h = 11.1 s
+Name the director for 1957,SELECT Director FROM table WHERE Year = 1957
+Name the director who has title of transylvania 6-5000,SELECT Director FROM table WHERE Title = transylvania 6-5000
+Name the attendance for time of 1:31,SELECT Attendance FROM table WHERE Time = 1:31
+Name the score for 1:36 time,SELECT Score FROM table WHERE Time = 1:36
+Name the score for october 9,SELECT Score FROM table WHERE Date = october 9
+What round did the overall pick of 91 occur in the 1982 NFL draft?,SELECT MIN Round FROM table WHERE Overall = 91
+What Race 3 is Round 5?,SELECT Race 3 FROM table WHERE Round = round 5
+What Round has the Track Clipsal 500 Support?,SELECT Round FROM table WHERE Track = clipsal 500 support
+"What Race 2 has a Race 1 of dnf, a Race 3 of dnf, and the Track Winton?",SELECT Race 2 FROM table WHERE Race 1 = dnf AND Race 3 = dnf AND Track = winton
+What Round has the Track Winton?,SELECT Round FROM table WHERE Track = winton
+What is the Race 2 result of Round 2?,SELECT Race 2 FROM table WHERE Round = round 2
+What is the Race 1 result of Round 2?,SELECT Race 1 FROM table WHERE Round = round 2
+Which women's double took place in 2006?,SELECT Women's doubles FROM table WHERE Year = 2006
+Which women's single had Cai Jaini Qi Yu on the women's doubles team?,SELECT Women's singles FROM table WHERE Women's doubles = cai jaini qi yu
+Which women's doubles had Tine Rasmussen on the women's singles?,SELECT Women's doubles FROM table WHERE Women's singles = tine rasmussen
+What is the average year with Nathan Robertson Gail Emms in mixed doubles?,SELECT AVG Year FROM table WHERE Mixed doubles = nathan robertson gail emms
+Who is the player with a 76-67-71=214 score?,SELECT Player FROM table WHERE Score = 76-67-71=214
+What is Nick Price's score?,SELECT Score FROM table WHERE Player = nick price
+What is the country of the player with a score of 69-74-71=214?,SELECT Country FROM table WHERE Score = 69-74-71=214
+What is the to par of Greg Norman?,SELECT To par FROM table WHERE Player = greg norman
+What's the score for opponent @ Tigers on July 24?,SELECT Score FROM table WHERE Opponent = @ tigers AND Date = july 24
+What's the opponent for July 2?,SELECT Opponent FROM table WHERE Date = july 2
+What's the year of the Chassis surtees ts19?,SELECT Year FROM table WHERE Chassis = surtees ts19
+What are the lowest points past the year 1978?,SELECT MIN Points FROM table WHERE Year > 1978
+What's the top year with the Chassis ats hs1?,SELECT MAX Year FROM table WHERE Chassis = ats hs1
+What was the time on September 1?,SELECT Local Time FROM table WHERE Date = september 1
+Where was September 5?,SELECT Location FROM table WHERE Date = september 5
+"When the Winning score is 74-68-67-75=284, what was the Margin of victory?",SELECT Margin of victory FROM table WHERE Winning score = 74-68-67-75=284
+"When the Winning is 71-71-70-69=281, what is the To par?",SELECT To par FROM table WHERE Winning score = 71-71-70-69=281
+"When the Winning score is 68-65-65-68=266, what is the Margin of victory?",SELECT Margin of victory FROM table WHERE Winning score = 68-65-65-68=266
+On what Date was the Winning score of 72-67-68-67=274?,SELECT Date FROM table WHERE Winning score = 72-67-68-67=274
+What is the total number of 2nd place finishes for riders active in years 2009-2010 and more than 0 wins?,SELECT SUM 2nd pl. FROM table WHERE Years active = 2009-2010 AND Wins > 0
+What is the total number of 3rd place finishes for racers with 0 titles?,SELECT SUM 3rd pl. FROM table WHERE Titles. < 0
+What is the sum of the number of wins for racers with 0 3rd place finishes?,SELECT SUM Wins FROM table WHERE 3rd pl. < 0
+What is the average number of 2nd place finishes for racers active in the year 2000 and more than 0 titles?,SELECT AVG 2nd pl. FROM table WHERE Years active = 2000 AND Titles. > 0
+Name the sum of played for c.d. luis ángel firpo and place more than 3,SELECT SUM Played FROM table WHERE Team = c.d. luis ángel firpo AND Place > 3
+Name the total number of places which has played more than 18,SELECT COUNT Place FROM table WHERE Played > 18
+Name the total number of lost when goals scored is less than 22 and goals conceded is more than 27,SELECT COUNT Lost FROM table WHERE Goals Scored < 22 AND Goals Conceded > 27
+Name the average goals conceded with draw bigger than 7 and goals scored more than 24,SELECT AVG Goals Conceded FROM table WHERE Draw > 7 AND Goals Scored > 24
+Name the least goals scored with place more than 8 and lost less than 8,SELECT MIN Goals Scored FROM table WHERE Place > 8 AND Lost < 8
+"Where does Mount Chamberlin, located in Alaska, rank on the chart?",SELECT SUM Rank FROM table WHERE State = alaska AND Mountain Peak = mount chamberlin
+What is the location of the mountain ranked at 36?,SELECT Location FROM table WHERE Rank = 36
+Where does the Kuskokwim Mountains rank on the chart?,SELECT MAX Rank FROM table WHERE Mountain Range = kuskokwim mountains
+What is the average rank of a mountain range located in Maine?,SELECT AVG Rank FROM table WHERE State = maine
+What round was matt roth drafted?,SELECT COUNT Round FROM table WHERE Player = matt roth
+What team did the player represent that was picked after 196?,SELECT NFL Club FROM table WHERE Pick > 196
+Name the position for european competitions of eurocup regular season,SELECT Pos. FROM table WHERE European competitions = eurocup regular season
+Who was the opponent with a series of 3-2?,SELECT Opponent FROM table WHERE Series = 3-2
+Who was the opponent with a series of 1-0?,SELECT Opponent FROM table WHERE Series = 1-0
+For the Delmar school what is the division record?,SELECT Division Record FROM table WHERE School = delmar
+What school does the Blue Raiders belong to?,SELECT School FROM table WHERE Team = blue raiders
+What team name belongs to Seaford?,SELECT Team FROM table WHERE School = seaford
+What division record did the Spartans hold?,SELECT Division Record FROM table WHERE Team = spartans
+The wildcats belong to what school?,SELECT School FROM table WHERE Team = wildcats
+How many total murders happened after 2011?,SELECT SUM Murder FROM table WHERE Year > 2011
+"Which average Robbery has the following criteria: Non-Violent crime less than 1147, rape less then 11, aggrevated assault greater than 167 and a crime index with a total of 1313?",SELECT AVG Robbery FROM table WHERE Non-violent Crime < 1147 AND Rape < 11 AND Aggravated Assault > 167 AND Crime Index Total = 1313
+"Which non-violent crime rate per 1000 peope has the following criteria: crime rate per 1000 greater than 82.8, violent crime smaller than 305, robbery less than 147 and a crime index total greater than 1540?",SELECT AVG Violent crime Rate per 1000 FROM table WHERE Crime rate Per 1000 > 82.8 AND Violent crime < 305 AND Robbery < 147 AND Crime Index Total > 1540
+"Which aggravated assault has the highest amount and the following criteria: crime rate per 1000 greater than 89.1,rape value of 23, and a crime index greater than 1590?",SELECT MAX Aggravated Assault FROM table WHERE Crime rate Per 1000 > 89.1 AND Rape = 23 AND Crime Index Total > 1590
+When did sony music direct a label?,SELECT Date FROM table WHERE Label = sony music direct
+What record had an alca-271 cd?,SELECT Region FROM table WHERE Format = cd AND Catalog = alca-271
+What formated cataloged alca-9196?,SELECT Format FROM table WHERE Catalog = alca-9196
+Which Podium has 1 Race and a Final Place of 5th?,SELECT Podiums FROM table WHERE Races = 1 AND Final Placing = 5th
+Which Season has a Final Place of 8th and 8 Podiums?,SELECT Season FROM table WHERE Final Placing = 8th AND Podiums = 8
+"Which Season has 0 Podiums, 1 Race, and 0 Points?",SELECT Season FROM table WHERE Podiums = 0 AND Races = 1 AND Points = 0
+Which Season has 95 Points?,SELECT Season FROM table WHERE Points = 95
+Which Race has the Toyota Racing Series New Zealand and 0 wins?,SELECT Races FROM table WHERE Series = toyota racing series new zealand AND Wins = 0
+Which Season has a 19th Final Place?,SELECT Season FROM table WHERE Final Placing = 19th
+What is the largest frequency owned by multicultural broadcasting with a Format of vietnamese?,SELECT MAX Frequency FROM table WHERE Status = owned by multicultural broadcasting AND Format = vietnamese
+Which format has a Station of klok?,SELECT Format FROM table WHERE Station = klok
+"Which format has a Frequency larger than 1050, and a Station of kvto?",SELECT Format FROM table WHERE Frequency > 1050 AND Station = kvto
+"What is the total frequency have a Status of owned by cumulus media, and a Format of news?",SELECT SUM Frequency FROM table WHERE Status = owned by cumulus media AND Format = news
+Which format has a Station of kcbs?,SELECT Format FROM table WHERE Station = kcbs
+Who has the lowest FA cup and has a total over 46?,SELECT MIN FA Cup FROM table WHERE Total > 46
+What is the sum of the League Cup smaller than 0?,SELECT SUM Total FROM table WHERE League Cup < 0
+What is the average of all Heats of competitors with a Time of 59.11 and a lane higher than 3?,SELECT AVG Heat FROM table WHERE Time = 59.11 AND Lane > 3
+What is the highest Lane used by a racer from Malta?,SELECT MAX Lane FROM table WHERE Nationality = malta
+"What is the Name of the racer with a heat higher than 2 and a lane less than 5, with a time of 1:01.53?",SELECT Name FROM table WHERE Heat > 2 AND Lane < 5 AND Time = 1:01.53
+How many wins did he have when he made over 2 cuts and had under 2 top 10s?,SELECT AVG Wins FROM table WHERE Cuts made > 2 AND Top-10 < 2
+"Who was the opponent of the game that 31,293 people attended that had a final score of 9 - 6.","SELECT Opponent FROM table WHERE Score = 9 - 6 AND Attendance > 31,293"
+How many people attended the game against athletics with the record of 9-12?,SELECT COUNT Attendance FROM table WHERE Opponent = athletics AND Record = 9-12
+How many people went to the game with the record of 8-10?,SELECT SUM Attendance FROM table WHERE Record = 8-10
+which entrant after 1987 had 12 points and a benetton b188 chassis?,SELECT Entrant FROM table WHERE Year > 1987 AND Chassis = benetton b188 AND Points = 12
+what's the earliest year that there was a cosworth v8 engine and 12 points?,SELECT MIN Year FROM table WHERE Engine = cosworth v8 AND Points = 12
+which chassis were in use prior to 1988?,SELECT Chassis FROM table WHERE Year < 1988
+Who was from Great Britain in lane 5?,SELECT Name FROM table WHERE Nationality = great britain AND Lane = 5
+How many people were in attendance at week 16?,SELECT AVG Attendance FROM table WHERE Week = 16
+What entrant had a chassis of Maserati 250f in 1954?,SELECT Entrant FROM table WHERE Chassis = maserati 250f AND Year = 1954
+What is the highest number of points before 1954?,SELECT MAX Points FROM table WHERE Year < 1954
+What is the lowest decile that Ohau School has?,SELECT MIN Decile FROM table WHERE Name = ohau school
+What gender is allowed to attend the school that has a decile of 6 and a roll that is less than 179?,SELECT Gender FROM table WHERE Decile = 6 AND Roll < 179
+What gender is allowed at the school which has a roll of 338?,SELECT Gender FROM table WHERE Roll = 338
+"What authority controls the school in Levin that has a decile of 6, and a roll of 226?",SELECT Authority FROM table WHERE Decile = 6 AND Area = levin AND Roll = 226
+What Function (figure) has Serial number AF 934103?,SELECT Function (figure) FROM table WHERE Serial number = af 934103
+What is Moondancer's Primary Military Speciality?,SELECT Primary military speciality FROM table WHERE Code Name = moondancer
+"With a Primary military speciality of astral assault tactics, what is the Secondary military speciality?",SELECT Secondary military speciality FROM table WHERE Primary military speciality = astral assault tactics
+What is the Serial number for the Space Security Trooper Function (figure)?,SELECT Serial number FROM table WHERE Function (figure) = space security trooper
+What is the Code Name for the Space Pilot Function (figure)?,SELECT Code Name FROM table WHERE Function (figure) = space pilot
+What Birthplace's Real Name is Charles 'Chuck' Connors?,SELECT Birthplace FROM table WHERE Real Name = charles 'chuck' connors
+Who is the home team of the game on December 21?,SELECT Home FROM table WHERE Date = december 21
+Who is the visitor of the game on March 7?,SELECT Visitor FROM table WHERE Date = march 7
+Which is the highest year that has 3 points?,SELECT MAX Year FROM table WHERE Points = 3
+Which engine has more than 0 points and a year before 1984?,SELECT Engine(s) FROM table WHERE Points > 0 AND Year < 1984
+"Name the game site for october 18, 1992","SELECT Game site FROM table WHERE Date = october 18, 1992"
+"Name the game site for october 4, 1992","SELECT Game site FROM table WHERE Date = october 4, 1992"
+Name the date when bye was opponent,SELECT Date FROM table WHERE Opponent = bye
+Name the attendance for july 16,SELECT Attendance FROM table WHERE Date = july 16
+Name the loss for 48-37,SELECT Loss FROM table WHERE Record = 48-37
+Name the record for 9-4 score,SELECT Record FROM table WHERE Score = 9-4
+Name the least attendance for 52-37 record,SELECT MIN Attendance FROM table WHERE Record = 52-37
+What Away team has the Golden point(s) scorer Trent Hodkinson and the Home of Manly-Warringah Sea Eagles?,SELECT Away FROM table WHERE Golden point(s) scorer = trent hodkinson AND Home = manly-warringah sea eagles
+What is the Score of Golden Point(s) scorer Adam Reynolds?,SELECT Score FROM table WHERE Golden point(s) scorer = adam reynolds
+What Golden point(s) has the Venue Allianz Stadium?,SELECT Golden point(s) scorer FROM table WHERE Venue = allianz stadium
+What Golden point(s) scorer has the Away Sydney Roosters and Home Cronulla Sharks?,SELECT Golden point(s) scorer FROM table WHERE Away = sydney roosters AND Home = cronulla sharks
+What Golden point(s) scorer has the Away Brisbane Broncos and Home South Sydney Rabbitohs?,SELECT Golden point(s) scorer FROM table WHERE Away = brisbane broncos AND Home = south sydney rabbitohs
+What are the revenues for ōoka tadayoshi (2nd) (大岡忠愛)?,SELECT Revenues FROM table WHERE Name = ōoka tadayoshi (2nd) (大岡忠愛)
+What's the lineage of ōoka tadatomo (大岡忠與)?,SELECT Lineage FROM table WHERE Name = ōoka tadatomo (大岡忠與)
+What's the tenure of 3rd son of tadatsune?,SELECT Tenure FROM table WHERE Lineage = 3rd son of tadatsune
+"What's the court ranking of 5th son of tadayori and has revenues of 10,000 koku?","SELECT Court Rank FROM table WHERE Revenues = 10,000 koku AND Lineage = 5th son of tadayori"
+What's the courtesy title of 4th son of hatamoto ōoka tadataka?,SELECT Courtesy title FROM table WHERE Lineage = 4th son of hatamoto ōoka tadataka
+What was the rank of the event won by Pieter de Korver?,SELECT Rank FROM table WHERE Name = pieter de korver
+"Which event had a prize of $2,434,061?","SELECT Name FROM table WHERE Prize = $2,434,061"
+What was the prize won by Sebastian Ruthenberg?,SELECT Prize FROM table WHERE Name = sebastian ruthenberg
+"Who won the event with a top prize of $2,434,061?","SELECT Name FROM table WHERE Prize = $2,434,061"
+The rider mike di meglio had a total of how many grids?,SELECT COUNT Grid FROM table WHERE Rider = mike di meglio
+What is the N117/2400 IEC3 associated with an N100IEC3 of 25?,SELECT N117/2400 IEC3 FROM table WHERE N100 IEC3 = 25
+What is the Name of the Special Stage with a 2.40km length and S. Loeb as Winner?,SELECT Name FROM table WHERE Length = 2.40km AND Winner = s. loeb
+"In the 21.40km Santa Rosa 1 Stage, what was the Time?",SELECT Time FROM table WHERE Length = 21.40km AND Name = santa rosa 1
+What was the Winner of the SS5 Stage?,SELECT Winner FROM table WHERE Stage = ss5
+What was the Time in the Mina Clavero 2 Stage?,SELECT Time FROM table WHERE Name = mina clavero 2
+What was Stage SS2's Winner?,SELECT Winner FROM table WHERE Stage = ss2
+What is the lowest amount of bronze medals won by Music City Mystique where they won more than 3 gold medals and less than 15 total medals?,SELECT MIN Bronze Medals FROM table WHERE Gold Medals > 3 AND Ensemble = music city mystique AND Total Medals < 15
+"When the Mandarins won more than 1 bronze medals, how many gold medals did they win?",SELECT COUNT Gold Medals FROM table WHERE Ensemble = mandarins AND Bronze Medals > 1
+"What is the largest roll with Years 1–8, a Name of dorie school, and a Decile larger than 9?",SELECT MAX Roll FROM table WHERE Years = 1–8 AND Name = dorie school AND Decile > 9
+"How many deciles have Years of 1–8, and a Roll of 49?",SELECT COUNT Decile FROM table WHERE Years = 1–8 AND Roll = 49
+"Which name has Years of 1–8, a Decile of 9, and a Roll smaller than 141?",SELECT Name FROM table WHERE Years = 1–8 AND Decile = 9 AND Roll < 141
+"What is the largest Decile with Years of 1–8, anAuthority of state, and a Roll of 141?",SELECT MAX Decile FROM table WHERE Years = 1–8 AND Authority = state AND Roll = 141
+How many deciles have an Authority of state and a Name of chertsey school?,SELECT COUNT Decile FROM table WHERE Authority = state AND Name = chertsey school
+"Bldr of mcw&f, and a Year smaller than 1927, and a LT Nos of 9820-9821 has what type?",SELECT Type FROM table WHERE Bldr = mcw&f AND Year < 1927 AND LT Nos = 9820-9821
+"Bldr of mcw&f, and a Notes of ""mv""; converted from steam stock, 1927, and a Year of 1920, and a LT Nos of 9716-9718 has what type?","SELECT Type FROM table WHERE Bldr = mcw&f AND Notes = ""mv""; converted from steam stock, 1927 AND Year = 1920 AND LT Nos = 9716-9718"
+"What is the highest position less than 7 that had more than 421,760 in sales for the song Don't Stop Movin'?","SELECT MAX Highest Position FROM table WHERE Sales > 421,760 AND Song Title = don't stop movin' AND Position < 7"
+"What position is the song Have You Ever with more than 1,037,235 in sales?","SELECT COUNT Position FROM table WHERE Sales > 1,037,235 AND Song Title = have you ever"
+What were the total number of sales for the song 21 Seconds?,SELECT COUNT Sales FROM table WHERE Song Title = 21 seconds
+Which Reigns has 92 days held?,SELECT Reigns FROM table WHERE Days held = 92
+What successful defenses has 126 days held and a Reigns of 3?,SELECT Successful defenses FROM table WHERE Days held = 126 AND Reigns = 3
+"Which event has Philadelphia, PA as the location and 41 days held?","SELECT Event FROM table WHERE Location = philadelphia, pa AND Days held = 41"
+Who was number 3 that had a number 2 of Delfina and a Final of Pedro?,SELECT No.3 FROM table WHERE No.2 = delfina AND FINAL = pedro
+Who was number 9 that had a number 7 of Joana and a Final of Pedro?,SELECT No.9 FROM table WHERE No.7 = joana AND FINAL = pedro
+"Which days were presented by Andreas Mikroutsikos and were launched on March 10, 2003?","SELECT Days FROM table WHERE The Presenter = andreas mikroutsikos AND Launch Date = march 10, 2003"
+Who won when the presenter was Tatiana Stefanidou?,SELECT The Winner FROM table WHERE The Presenter = tatiana stefanidou
+"What was the prize when the show was aired on Ant1, was presented by Andreas Mikroutsikos, and was launched on March 10, 2003?","SELECT The Prize FROM table WHERE TV Channel = ant1 AND The Presenter = andreas mikroutsikos AND Launch Date = march 10, 2003"
+Name the sum of gold when Bronze is less than 0,SELECT SUM Gold FROM table WHERE Bronze < 0
+Name the nation when bronze is less than 4 and the total is more than 4,SELECT Nation FROM table WHERE Total > 4 AND Bronze < 4
+What positions are in the Chicago bulls?,SELECT Position FROM table WHERE Team = chicago bulls
+What season did a United States center play in?,SELECT Season FROM table WHERE Nationality = united states AND Position = center
+Which film was released in 1983?,SELECT Film FROM table WHERE Year = 1983
+What was the US Peak position of the film that peaked at #21 in the UK?,SELECT U.S. peak position FROM table WHERE U.K. peak position = 21
+Who was the score composer of the film released in 1967?,SELECT Score composer FROM table WHERE Year = 1967
+How many years had a film that peaked at #10 in the UK?,SELECT COUNT Year FROM table WHERE U.K. peak position = 10
+"what category is for tom shankland, director?",SELECT Category FROM table WHERE Director(s) = tom shankland
+How many transfer fees did Afonso Alves have after 2008?,SELECT COUNT Transfer fee ( € million) FROM table WHERE Player = afonso alves AND Year > 2008
+What was the highest transfer fee in 2008 that is from psv and is ranked larger than 17?,SELECT MAX Transfer fee ( € million) FROM table WHERE Year = 2008 AND From = psv AND Rank > 17
+Who has a transfer fee larger than 12 from ajax in 2006 while ranked higher than 17?,SELECT Player FROM table WHERE Transfer fee ( € million) > 12 AND Rank > 17 AND Year > 2006 AND From = ajax
+Where was the film about the garden of the finzi-continis made?,SELECT Country FROM table WHERE Film title used in nomination = the garden of the finzi-continis
+Which film was translated from portuguese?,SELECT Original name FROM table WHERE Language = portuguese
+Which film originated in France?,SELECT Original name FROM table WHERE Country = france
+What is the real name of the movie about love?,SELECT Original name FROM table WHERE Film title used in nomination = love
+What is the real name of the movie directed by gert fredholm?,SELECT Original name FROM table WHERE Director = gert fredholm
+Which movie originated in Bulgaria?,SELECT Film title used in nomination FROM table WHERE Country = bulgaria
+Who was the opponent at the game that had a loss of Stieb (5-7)?,SELECT Opponent FROM table WHERE Loss = stieb (5-7)
+What was the loss of the game against the Angels with a 26-30 record?,SELECT Loss FROM table WHERE Opponent = angels AND Record = 26-30
+Name the women's singles for 1991,SELECT Women's singles FROM table WHERE Year = 1991
+Name the women's doubles for mixed doubles of no competition,SELECT Women's doubles FROM table WHERE Mixed doubles = no competition
+Name the women's singles for glenn macfarlane mark leadbeater,SELECT Women's singles FROM table WHERE Men's doubles = glenn macfarlane mark leadbeater
+Name the women's doubles for frederik kjærholm elsner,SELECT Women's doubles FROM table WHERE Men's singles = frederik kjærholm elsner
+Name the year for anton kriel chris cotillard,SELECT Year FROM table WHERE Men's doubles = anton kriel chris cotillard
+Name the men's doubles for years before 1999 and elizabeth cann for women's singles,SELECT Men's doubles FROM table WHERE Year < 1999 AND Women's singles = elizabeth cann
+What is the most points earlier than 1953 with a Ferrari 375/50 chassis?,SELECT MAX Points FROM table WHERE Year < 1953 AND Chassis = ferrari 375/50
+What is the latest year with more than 0 points?,SELECT MAX Year FROM table WHERE Points > 0
+"What year were there less than 1.5 points and an Entrant of escuderia bandeirantes, and a maserati straight-4 engine?",SELECT Year FROM table WHERE Points < 1.5 AND Entrant = escuderia bandeirantes AND Engine = maserati straight-4
+What is the number of points for the Entrant of escuderia bandeirantes earlier than 1952?,SELECT SUM Points FROM table WHERE Entrant = escuderia bandeirantes AND Year < 1952
+What was the double's performance data from the Canada Masters tournament in 2008?,SELECT 2008 FROM table WHERE Tournament = canada masters
+What was the double's performance data from the Monte Carlo Masters tournament in 2007?,SELECT 2007 FROM table WHERE Tournament = monte carlo masters
+What is the lowest 2004 population when there were 5158 households?,SELECT MIN Population (2004) FROM table WHERE Households = 5158
+What is the number for the Moroccan population when the name is Sebt Saiss and the 2004 population is more than 11212?,SELECT COUNT Moroccan population FROM table WHERE Name = sebt saiss AND Population (2004) > 11212
+What is the largest foreign population when the 2004 population is 7641?,SELECT MAX Foreign population FROM table WHERE Population (2004) = 7641
+What is the highest year that has no more than 0 points?,SELECT MAX Year FROM table WHERE Points < 0
+Which of the chassis had a total of 7 points?,SELECT Chassis FROM table WHERE Points = 7
+What was the latest year that a Bardahl entrant had a Kurtis Kraft 500c chassis with no more than 0 points?,SELECT MAX Year FROM table WHERE Chassis = kurtis kraft 500c AND Entrant = bardahl AND Points < 0
+What was the average points for Hopkins before 1956?,SELECT AVG Points FROM table WHERE Entrant = hopkins AND Year < 1956
+What is the least amount of points the entrant Simoniz received before 1960?,SELECT MIN Points FROM table WHERE Year < 1960 AND Entrant = simoniz
+What was the original title of the film directed by Lene Grønlykke and Sven Grønlykke?,SELECT Original title FROM table WHERE Director = lene grønlykke and sven grønlykke
+What is the language of the film directed by Federico Fellini?,SELECT Language FROM table WHERE Director = federico fellini
+What is the film title used in nomination for the film from South Korea?,SELECT Film title used in nomination FROM table WHERE Country = south korea
+What was the film title used in nomination for the film directed by Gheorghe Vitanidis?,SELECT Film title used in nomination FROM table WHERE Director = gheorghe vitanidis
+When did the film 'Monsters' come out?,SELECT Date FROM table WHERE Film = monsters
+What movie won with a date of 12/11/03,SELECT Recipient FROM table WHERE Date = 12/11/03
+Who was the producer for the film 'Strange Little Girls'?,SELECT Producer(s) FROM table WHERE Film = strange little girls
+Which writer worked for Intrepido LTD for a film on 17/03/04?,SELECT Writer(s) FROM table WHERE Recipient = intrepido ltd AND Date = 17/03/04
+Which producer worked for Animus Films LTD?,SELECT Producer(s) FROM table WHERE Recipient = animus films ltd
+How many people attended the game against the Mariners with a score of 9-6?,SELECT COUNT Attendance FROM table WHERE Opponent = mariners AND Score = 9-6
+What is the loss for the record of 42-36?,SELECT Loss FROM table WHERE Record = 42-36
+What date was the score 5-2 with a loss of sele (3-2)?,SELECT Date FROM table WHERE Score = 5-2 AND Loss = sele (3-2)
+What is the loss when the record is 38-33?,SELECT Loss FROM table WHERE Record = 38-33
+What was the pick number of Conor Jackson?,SELECT AVG Pick FROM table WHERE Player = conor jackson
+What school had the draft pick of 29?,SELECT School FROM table WHERE Pick = 29
+What school did Conor Jackson attend?,SELECT School FROM table WHERE Player = conor jackson
+What is the value for 2007 when 2008 is Q1?,SELECT 2007 FROM table WHERE 2008 = q1
+What is the win-loss when 2008 has a value of Q1 at Australian Open?,SELECT Career Win-Loss FROM table WHERE 2008 = q1 AND Tournament = australian open
+What is the value in 2009 at the French Open?,SELECT 2009 FROM table WHERE Tournament = french open
+What is the value in 2008 for the US Open?,SELECT 2008 FROM table WHERE Tournament = us open
+What is the value in 2009 when 1R is in 2007?,SELECT 2009 FROM table WHERE 2007 = 1r
+What is the record of the game on May 6?,SELECT Record FROM table WHERE Date = may 6
+what is the tournament when in 2012 the performance was 2r?,SELECT Tournament FROM table WHERE 2012 = 2r
+what is the tournament with the performance in 2010 and 2011 is 1r?,SELECT Tournament FROM table WHERE 2010 = 1r AND 2011 = 1r
+what is the 2012 performance when in 2011 is qf and 2010 is 3r?,SELECT 2012 FROM table WHERE 2011 = qf AND 2010 = 3r
+what is the tournament when 2011 is qf and 2012 is sf?,SELECT Tournament FROM table WHERE 2011 = qf AND 2012 = sf
+what is the tournament when the performance in 2012 is 3r and 2011 is qf?,SELECT Tournament FROM table WHERE 2012 = 3r AND 2011 = qf
+what is the 2011 performance for the US open?,SELECT 2011 FROM table WHERE Tournament = us open
+What is the year when Spirit Tom's Racing had more than 3 points?,SELECT SUM Year FROM table WHERE Entrant = spirit tom's racing AND Points > 3
+"Name the average week for attendance of 75,111","SELECT AVG Week FROM table WHERE Attendance = 75,111"
+"Name the sum of week with attendance of 62,233","SELECT SUM Week FROM table WHERE Attendance = 62,233"
+Who had the smallest points in 3rd place but had a position greater than 8?,SELECT MIN Points FROM table WHERE Place = 3rd AND Position > 8
+What was the place with 90 point total but a position less than 5?,SELECT Place FROM table WHERE Position < 5 AND Points = 90
+What's the name of the song by afro-dite that had a points total greater than 100?,SELECT Song FROM table WHERE Points > 100 AND Artist = afro-dite
+how much money was requested on the show which aired on 4 september 2011?,SELECT SUM Money requested (£) FROM table WHERE First aired = 4 september 2011
+what investing dragons aired on episode 10?,SELECT Investing Dragon(s) FROM table WHERE Episode = episode 10
+"For the Entrant of Sasol Jordan, add up all the points with a Year larger than 1993.",SELECT SUM Points FROM table WHERE Year > 1993 AND Entrant = sasol jordan
+Give the most points that features jordan 194 in the Chassis column.,SELECT MAX Points FROM table WHERE Chassis = jordan 194
+What car was awarded sub 1 litre in 2000?,SELECT 2000 FROM table WHERE category = sub 1 litre
+What car was awarded sub 1 litre in 2000 (won by toyota 1sz-fe 1.0l yaris in 1999)?,SELECT 2000 FROM table WHERE 1999 = toyota 1sz-fe 1.0l yaris AND category = sub 1 litre
+Which car won the same award in 2001 that the toyota 1nz-fxe hybrid prius won in 1999?,SELECT 2001 FROM table WHERE 1999 = toyota 1nz-fxe hybrid prius
+Which car won the same award in 2000 that the ferrari f133 5.5l v12 456 / 550 won in 2001?,SELECT 2000 FROM table WHERE 2001 = ferrari f133 5.5l v12 456 / 550
+Which car won the same award in 2001 that the bmw m67d39 3.9l v8 e38 740d won in 1999?,SELECT 2001 FROM table WHERE 1999 = bmw m67d39 3.9l v8 e38 740d
+Which car won the 1.4litre to 1.8litre award in 2001?,SELECT 2001 FROM table WHERE category = 1.4litre to 1.8litre
+What is the surface of the mountain range that contains the Elk Garden Mountain?,SELECT Surface FROM table WHERE Mountain = elk garden
+What is the 2012 value at the Grand Slam Tournaments?,SELECT 2012 FROM table WHERE Tournament = grand slam tournaments
+What is the tournament with A in 2011?,SELECT Tournament FROM table WHERE 2011 = a
+What is the 2010 value with A in 2009 and A in 2008 in the Australian Open?,SELECT 2010 FROM table WHERE 2009 = a AND 2008 = a AND Tournament = australian open
+What is the 2012 value with A in 2010 at the Tournament of Wimbledon?,SELECT 2012 FROM table WHERE 2010 = a AND Tournament = wimbledon
+What is the 2009 value with q1 in 2010?,SELECT 2009 FROM table WHERE 2010 = q1
+What was the record of the game that went 0-7?,SELECT Record FROM table WHERE Score = 0-7
+What day did the Diamondbacks go 2-7?,SELECT Date FROM table WHERE Opponent = diamondbacks AND Score = 2-7
+What was the record of the game that went 3-5?,SELECT Record FROM table WHERE Score = 3-5
+"Type of stratovolcano, and a Name of goat rocks, and a Elevation (m) larger than 2,494 has what highest elevation in feet?","SELECT MAX Elevation (ft) FROM table WHERE Type = stratovolcano AND Name = goat rocks AND Elevation (m) > 2,494"
+What is the lowest points of British Racing after 1963?,SELECT MIN Points FROM table WHERE Year > 1963
+Which chassis was used when over 6 points were earned?,SELECT Chassis FROM table WHERE Points = 6
+What is the average points of the drivers before 1964?,SELECT AVG Points FROM table WHERE Year < 1964
+In what time period were 578 built?,SELECT Period FROM table WHERE Built = 578
+In what time period was the Cessna 208 built?,SELECT Period FROM table WHERE Model = cessna 208
+In what time period were 354 built?,SELECT Period FROM table WHERE Built = 354
+How many silver metals are possessed by countries with 2 gold medals?,SELECT COUNT Silver FROM table WHERE Gold = 2
+What is the total sum of silver metals for all countries with more than 2 Bronze medals?,SELECT SUM Silver FROM table WHERE Total > 2 AND Bronze > 2
+What is the lowest number of bronze medals for a country with less than 1 gold and 0 silver?,SELECT MIN Bronze FROM table WHERE Gold = 1 AND Silver < 0
+What was the score of the game for April 16?,SELECT Loss FROM table WHERE Date = april 16
+"On what date was the attendance larger than 29,319 and had a score of 7-6?","SELECT Date FROM table WHERE Attendance > 29,319 AND Score = 7-6"
+What year was the No. 7 charts?,SELECT AVG Year FROM table WHERE Charts = no. 7
+"What is the chart number of the Requebra album with sales smaller than 32,000?","SELECT Charts FROM table WHERE Sales < 32,000 AND Álbum = requebra"
+Name the date for game site of riverfront stadium,SELECT Date FROM table WHERE Game site = riverfront stadium
+"Name the record with attendance of 73,996","SELECT Record FROM table WHERE Attendance = 73,996"
+Name the game site with result of w 20-14,SELECT Game site FROM table WHERE Result = w 20-14
+Name the result with week of 16,SELECT Result FROM table WHERE Week = 16
+Name the record with result of w 13-11,SELECT Record FROM table WHERE Result = w 13-11
+Name the result for opponent of chicago bears,SELECT Result FROM table WHERE Opponent = chicago bears
+The length of 30 minutes aired on what date?,SELECT Airdate FROM table WHERE Length = 30 minutes
+When did the length of 60 minutes air?,SELECT Airdate FROM table WHERE Length = 60 minutes
+"With a Division II of Portsmouth, what is the Division IV?",SELECT Division IV FROM table WHERE Division III = portsmouth
+What Division III has Bishop Brady in Division V and Hanover in Division IV?,SELECT Division III FROM table WHERE Division V = bishop brady AND Division IV = hanover
+What is the total sum of points of entrants with a reynard 92d chassis?,SELECT SUM Points FROM table WHERE Chassis = reynard 92d
+What is total amount of points of entrants with a ford cosworth engine and a year later than 1991?,SELECT COUNT Points FROM table WHERE Engine = ford cosworth AND Year > 1991
+When has a Venue of Adelaide Oval?,SELECT Date FROM table WHERE Venue = adelaide oval
+What is the Home Captain which has Waca Ground as a Venue,SELECT Home captain FROM table WHERE Venue = waca ground
+Name the venue for score of 1-3,SELECT Venue FROM table WHERE Score = 1-3
+Name the points with chassis of march 751,SELECT Points FROM table WHERE Chassis = march 751
+Name the most points for years before 1979 and chassis of alfa romeo 177,SELECT MAX Points FROM table WHERE Chassis = alfa romeo 177 AND Year < 1979
+Name the total number of points for beta team march 1975 and chassis of march 751,SELECT COUNT Points FROM table WHERE Entrant = beta team march AND Year = 1975 AND Chassis = march 751
+What Persian word(s) has the same meaning as the Romani word duj?,SELECT Persian FROM table WHERE Romani = duj
+What Domari word has the same meaning as the Hindi word pāñc?,SELECT Domari FROM table WHERE Hindi = pāñc
+What word in Hindi has the same meaning as the Lomavren word saj?,SELECT Hindi FROM table WHERE Lomavren = saj
+What Persian word has the same meaning as the Domari word na?,SELECT Persian FROM table WHERE Domari = na
+What Romani word has the same meaning as the Persian word dah?,SELECT Romani FROM table WHERE Persian = dah
+What Lomavren word has the same meaning as the Hindi word do?,SELECT Lomavren FROM table WHERE Hindi = do
+Which type of surface do Amer Delic Robert Kendrick's opponents have?,SELECT Surface FROM table WHERE Opponents = amer delic robert kendrick
+On which surface was the score w/o?,SELECT Surface FROM table WHERE Score = w/o
+What is Diego Junqueira Gabriel Trujillo-Soler's opponent's score?,SELECT Score FROM table WHERE Opponents = diego junqueira gabriel trujillo-soler
+Which surface do opponents of Thomas Oger Nicolas Tourte have?,SELECT Surface FROM table WHERE Opponents = thomas oger nicolas tourte
+"In the circuit of Madonie, what was the date that had the winning constructor Bugatti?",SELECT Date FROM table WHERE Circuit = madonie AND Winning constructor = bugatti
+Who was the winning driver of the Savio Circuit with the constructor Itala?,SELECT Winning driver FROM table WHERE Winning constructor = itala AND Name = savio circuit
+What is the date of death of the Countess of Flanders who was born in 1309?,SELECT Death FROM table WHERE Birth = 1309
+What is the date of death of the Countess of Flanders who was born in 1309?,SELECT Death FROM table WHERE Birth = 1309
+Who was Margaret of Brabant's spouse?,SELECT Spouse FROM table WHERE Name = margaret of brabant
+What is the average year for Wallenstein with 1a1 design?,SELECT AVG Acquired FROM table WHERE Design = 1a1 AND Name = wallenstein
+What design was acquired in 1875?,SELECT Design FROM table WHERE Acquired = 1875
+Who was the incumbent when Arthur Osborne won the election?,SELECT Incumbent FROM table WHERE Winner = arthur osborne
+How many saves did the player with a 92.3% save rate and 217 goals have?,SELECT SUM Saves FROM table WHERE Save % = 92.3% AND Goals against > 217
+What is the result of the match with Lugo as the oponent with a H/A of h?,SELECT Result FROM table WHERE Opponents = lugo AND H / A = h
+"Who is the opponent of the match with a H/A of h, Beguiristain Iceta as the referee, and a kick off at 1993-04-18 17:00?",SELECT Opponents FROM table WHERE H / A = h AND Referee = beguiristain iceta AND Kick Off = 1993-04-18 17:00
+What is the result of the match with a H/A of A and a kick off at 1992-10-31 16:00?,SELECT Result FROM table WHERE H / A = a AND Kick Off = 1992-10-31 16:00
+Who was the referee of the match with Badajoz as the opponent and a H/A of h?,SELECT Referee FROM table WHERE Opponents = badajoz AND H / A = h
+How many Laps were there in 2010?,SELECT SUM Laps FROM table WHERE Year = 2010
+Who was the co-driver for Toyota Racing after the year 2012?,SELECT Co-Drivers FROM table WHERE Team = toyota racing AND Year > 2012
+How many laps were driven by the racer who earned 4th place in 2013?,SELECT COUNT Laps FROM table WHERE Pos. = 4th AND Year > 2013
+"Which Opponent has an attendance greater than 50,522, and a record of 80-63?","SELECT Opponent FROM table WHERE Attendance > 50,522 AND Record = 80-63"
+Which opponent has a record of 78-60?,SELECT Opponent FROM table WHERE Record = 78-60
+Which opponent has a loss of erickson (8-19)?,SELECT Opponent FROM table WHERE Loss = erickson (8-19)
+"Which Attendance  has a Game score less than 3, and a Score of 2 – 5?",SELECT AVG Attendance FROM table WHERE Game < 3 AND Score = 2 – 5
+Who has Series of 2 – 3?,SELECT Visitor FROM table WHERE Series = 2 – 3
+Who has  a Home of detroit on  april 22?,SELECT Visitor FROM table WHERE Home = detroit AND Date = april 22
+"Leading Scorer that has a Goal smaller than 23, and a League of football league division 3, and a Year of 1997–98 is who?",SELECT Leading Scorer FROM table WHERE Goals < 23 AND League = football league division 3 AND Year = 1997–98
+Leading Scorer of Ian rush is what lowest # of goals?,SELECT MIN Goals FROM table WHERE Leading Scorer = ian rush
+"Goals that has a Position of 14th of 24, and a League of football conference has what sum?",SELECT SUM Goals FROM table WHERE Position = 14th of 24 AND League = football conference
+"Position of 7th of 24, and a Goals smaller than 24 is what league?",SELECT League FROM table WHERE Position = 7th of 24 AND Goals < 24
+Which entrant scored less than 2 points?,SELECT Entrant FROM table WHERE Points < 2
+Which entrant used the chassis de tomaso 505?,SELECT Entrant FROM table WHERE Chassis = de tomaso 505
+"What is the Presentation of Credentials has a Termination of Mission listed as August 15, 2000?","SELECT Presentation of Credentials FROM table WHERE Termination of Mission = august 15, 2000"
+Which Presentation of Credentials is listed for the Appointed by Benjamin Harrison?,SELECT Presentation of Credentials FROM table WHERE Appointed by = benjamin harrison
+What is the Termination of Mission with a Title of Ambassador Extraordinary and Plenipotentiary with a Representative of Reynold E. Carlson?,SELECT Termination of Mission FROM table WHERE Title = ambassador extraordinary and plenipotentiary AND Representative = reynold e. carlson
+"Which Representative has a Termination of Mission as May 24, 1905?","SELECT Representative FROM table WHERE Termination of Mission = may 24, 1905"
+"What Title has a Presentation of Credentials of October 4, 1988?","SELECT Title FROM table WHERE Presentation of Credentials = october 4, 1988"
+What is the Appointed by that has the Title of Ambassador Extraordinary and Plenipotentiary and has a Representative of Spruille Braden?,SELECT Appointed by FROM table WHERE Title = ambassador extraordinary and plenipotentiary AND Representative = spruille braden
+Who's the race leader of Cuneo to Turin?,SELECT Race Leader FROM table WHERE Course = cuneo to turin
+What course are they running on stage 1?,SELECT Course FROM table WHERE Stage = 1
+What's the distance of the course of stage 4?,SELECT Distance FROM table WHERE Stage = 4
+What was the distance of the course for stage 4?,SELECT Distance FROM table WHERE Stage = 4
+Who was the race leader for stage 5?,SELECT Race Leader FROM table WHERE Stage = 5
+Name the result for 2000 afc asian cup qualification,SELECT Result FROM table WHERE Competition = 2000 afc asian cup qualification
+Name the least total when bronze is less than 2 and rank is more than 2 with silver less than 1,SELECT MIN Total FROM table WHERE Bronze < 2 AND Rank > 2 AND Silver < 1
+"What is the largest gold with a Total of 2, and a Rank smaller than 2?",SELECT MAX Gold FROM table WHERE Total = 2 AND Rank < 2
+What is the lowest total from United States with a Rank smaller than 2?,SELECT MIN Total FROM table WHERE Nation = united states AND Rank < 2
+What is the average silver with a Rank smaller than 2 and more than 1 gold?,SELECT AVG Silver FROM table WHERE Rank < 2 AND Gold > 1
+What is the smallest rank with a Total smaller than 1?,SELECT MIN Rank FROM table WHERE Total < 1
+"What was the average year that Xuxa 3 earned the certification 2x platinum, and that the sales were higher than 750,000?","SELECT AVG Year FROM table WHERE Certification = 2x platinum AND Álbum = xuxa 3 AND Sales > 750,000"
+What were the number of sales before 1991?,SELECT Sales FROM table WHERE Year < 1991
+What álbum was in the year 1996?,SELECT Álbum FROM table WHERE Year = 1996
+"What year was the (Barcaldine) larger than 1,868 and the (Aramac) lower than 1,592?","SELECT AVG Year FROM table WHERE (Barcaldine) > 1,868 AND (Aramac) < 1,592"
+"What is the high Population (total) from 1976 with a (Barcaldine) smaller than 1,780?","SELECT MAX Population (Total) FROM table WHERE Year = 1976 AND (Barcaldine) < 1,780"
+"What year had a Poulation (Total) of 3,492 and a (Barcaldine) less than 1,818?","SELECT AVG Year FROM table WHERE Population (Total) = 3,492 AND (Barcaldine) < 1,818"
+"What is the average (Jericho) with a Population (Total) less than 4,059 in 1986 and a (Barcaldine) higher than 1,779?","SELECT AVG (Jericho) FROM table WHERE Population (Total) < 4,059 AND Year = 1986 AND (Barcaldine) > 1,779"
+"What is the average (Barcaldine) with a Population (Total) less than 3,594 and a 920 (Jericho) after 2006?","SELECT AVG (Barcaldine) FROM table WHERE Population (Total) < 3,594 AND (Jericho) = 920 AND Year > 2006"
+"What Year has an (Aramac) of 832 and a Population (Total) less than 3,762?","SELECT SUM Year FROM table WHERE (Aramac) = 832 AND Population (Total) < 3,762"
+What was the engine of the Hoover Motor Express after 1955 with greater than 0 points?,SELECT Engine FROM table WHERE Year > 1955 AND Points > 0 AND Entrant = hoover motor express
+What is the average year that the Belanger Motors had an Offenhauser l4 engine?,SELECT AVG Year FROM table WHERE Engine = offenhauser l4 AND Entrant = belanger motors
+Who is the prisoner that is older than 45 and has served less than 22 years on death row?,SELECT Name FROM table WHERE Current age > 45 AND Years on death row < 22
+What is the prisoner's name that is currently 29 years old?,SELECT Name FROM table WHERE Current age = 29
+What is the hair color of Kool Kayla with release date of January 2009?,SELECT Hair Color: FROM table WHERE Release Date = january 2009 AND Name = kool kayla
+What is the eye color of Oo-lala Olivia with release date of October 2008?,SELECT Eye Color: FROM table WHERE Release Date = october 2008 AND Name = oo-lala olivia
+What is the release date for gold hair color?,SELECT Release Date FROM table WHERE Hair Color: = gold
+"Who is retired with eyes of dark brown, and black hair?",SELECT Retired? FROM table WHERE Eye Color: = dark brown AND Hair Color: = black
+Name the 2010 for 2007 of a and 2012 of a,SELECT 2010 FROM table WHERE 2007 = a AND 2012 = a
+Name the 2008 for 2012 being a and tournament of australian open,SELECT 2008 FROM table WHERE 2012 = a AND Tournament = australian open
+Name the tournament for 2012 grand slam tournaments,SELECT Tournament FROM table WHERE 2012 = grand slam tournaments
+What year has an ERA engine and an ERA A-type chassis?,SELECT Year FROM table WHERE Engine = era AND Chassis = era a-type
+What is the earliest year that has a Bristol engine?,SELECT MIN Year FROM table WHERE Engine = bristol
+What was the record at the game that had a loss of Brandon (4–8)?,SELECT Record FROM table WHERE Loss = brandon (4–8)
+What was the loss of the game with a record of 54–42?,SELECT Loss FROM table WHERE Record = 54–42
+Who was the opponent at the game that had a loss of Bell (6–9)?,SELECT Opponent FROM table WHERE Loss = bell (6–9)
+What was the record at the game that had a loss of Wyatt (4–4)?,SELECT Record FROM table WHERE Loss = wyatt (4–4)
+"In 1985, how many points were earned by the entrant with the March 85B chassis?",SELECT MAX Points FROM table WHERE Year = 1985 AND Chassis = march 85b
+How many points did Corbari Italia earn in 1985?,SELECT Points FROM table WHERE Entrant = corbari italia AND Year = 1985
+Record of 18–15–6 belongs to what lowest attendance?,SELECT MIN Attendance FROM table WHERE Record = 18–15–6
+"Decision of parent, and a Home of philadelphia, and a Record of 20–16–7 is on what date?",SELECT Date FROM table WHERE Decision = parent AND Home = philadelphia AND Record = 20–16–7
+"Decision of parent, and a Visitor of Philadelphia, and a Date of January 27 had what score?",SELECT Score FROM table WHERE Decision = parent AND Visitor = philadelphia AND Date = january 27
+"What was the average Game, when the attendance was higher than 56,040?","SELECT AVG Game FROM table WHERE Attendance > 56,040"
+What was date when the time was 2:26 and the location was Riverfront Stadium?,SELECT Date FROM table WHERE Time = 2:26 AND Location = riverfront stadium
+Who is the visitor on May 9?,SELECT Visitor FROM table WHERE Date = may 9
+Which Discoveryhas an Operator(s) of lundin?,SELECT Discovery FROM table WHERE Operator(s) = lundin
+Which Geological Trend has an Operator(s) of woc?,SELECT Geological Trend FROM table WHERE Operator(s) = woc
+Which operator has a Reserve of 100 bbbl?,SELECT Operator(s) FROM table WHERE Reserves = 100 bbbl
+"Which Field has a Discovery of na, and an Operator(s) of woc, and a Geological Trend of western",SELECT Field FROM table WHERE Discovery = na AND Operator(s) = woc AND Geological Trend = western
+What primary sponsor(s) owns ford fusion car(s) and the crew chief is Drew Blickensderfer?,SELECT Primary Sponsor(s) FROM table WHERE Car(s) = ford fusion AND Crew Chief = drew blickensderfer
+What crew chief has an owner name Jack Roush and driver Greg Biffle?,SELECT Crew Chief FROM table WHERE Owner(s) = jack roush AND Driver(s) = greg biffle
+What primary sponsor has the owner Rick Hendrick and their crew chief is Alan Gustafson?,SELECT Primary Sponsor(s) FROM table WHERE Owner(s) = rick hendrick AND Crew Chief = alan gustafson
+What is the value for Bahia when the Northeast total was 6747013?,SELECT Bahia FROM table WHERE Northeast Total = 6747013
+What was the lowest number in Pernambuco where the Northeast had a total of 119978?,SELECT MIN Pernambuco FROM table WHERE Northeast Total = 119978
+Who was the winner from the United States the year Kimberly Kim was runner-up?,SELECT Winner FROM table WHERE Runner-up = kimberly kim AND Country = united states
+What number pick was the player for the Oakland Athletics who plays the 1B position?,SELECT Pick FROM table WHERE Position = 1b AND Team = oakland athletics
+What tournament was at the 2007 Olympic Games?,SELECT Tournament FROM table WHERE 2007 = olympic games
+What tournament was at the 2011 Cincinnati Masters?,SELECT 2011 FROM table WHERE Tournament = cincinnati masters
+In what heat did the swimmer in Lane 6 rank higher than 7 with a time of 4:08.27?,SELECT SUM Heat FROM table WHERE Lane = 6 AND Time = 4:08.27 AND Rank > 7
+What was the Comp on 2007-08-06?,SELECT Comp FROM table WHERE Date = 2007-08-06
+How many Apogee sis Ops-8285 with more than 1500 kg?,SELECT COUNT Apogee (km) FROM table WHERE Alt name = ops-8285 AND Mass (kg) > 1500
+What is the lowest Perigee with a Launch date of 1970-08-26?,SELECT MIN Perigee (km) FROM table WHERE Launch date = 1970-08-26
+How many total appearances did Grant Brebner have?,SELECT Total FROM table WHERE Name = grant brebner
+Which player has an A-League of 150 (4)?,SELECT Name FROM table WHERE A-League = 150 (4)
+Which player had a total of 116 (22)?,SELECT Name FROM table WHERE Total = 116 (22)
+Which player has an A-League of 150 (4)?,SELECT Name FROM table WHERE A-League = 150 (4)
+Which player has an A-League of 113 (0)?,SELECT Name FROM table WHERE A-League = 113 (0)
+What is the data limit for a T-Mobile internet basic plan?,SELECT Data limit/ GB FROM table WHERE Company = t-mobile AND Plan name = internet basic
+What is the data limit for vodafone?,SELECT Data limit/ GB FROM table WHERE Company = vodafone
+"What plan has monthly prices of 300, 500, 750, 1000?","SELECT Plan name FROM table WHERE Monthly price incl. VAT/ CZK = 300, 500, 750, 1000"
+What is the maximum download speed for the Internet premium 3G plan?,SELECT Maximum download speed/ kbps FROM table WHERE Technology = 3g AND Plan name = internet premium
+What is the maximum download speed for the Internet basic plan with 3G?,SELECT Maximum download speed/ kbps FROM table WHERE Technology = 3g AND Plan name = internet basic
+What is the to par for Gene Littler?,SELECT To par FROM table WHERE Player = gene littler
+What is the country that placed 4?,SELECT Country FROM table WHERE Place = 4
+Which school has a decile of 8 and a roll of 705?,SELECT Name FROM table WHERE Decile = 8 AND Roll = 705
+What is the roll of the school in Oakura?,SELECT SUM Roll FROM table WHERE Area = oakura
+What is the avererage decile of Francis Douglas Memorial College?,SELECT AVG Decile FROM table WHERE Name = francis douglas memorial college
+What was the final score in a 2002 fifa world cup qualification that was less than 10?,SELECT Result FROM table WHERE Competition = 2002 fifa world cup qualification AND Goal < 10
+What is the earliest year with points more than 8?,SELECT MIN Year FROM table WHERE Pts. > 8
+What are the points for a chassis of march 811?,SELECT SUM Pts. FROM table WHERE Chassis = march 811
+"Who had 8 points, later than 1980, and a theodore ty02 chassis?",SELECT Entrant FROM table WHERE Year > 1980 AND Pts. = 8 AND Chassis = theodore ty02
+Which United States player has a To par of 14?,SELECT Player FROM table WHERE Country = united states AND To par = 14
+Which year averaged less than 9 points?,SELECT AVG Year FROM table WHERE Points < 9
+What is the total points of teams using a ligier js11/15 chassis?,SELECT COUNT Points FROM table WHERE Chassis = ligier js11/15
+What is the highest year team tyrrell earned more than 14 points?,SELECT MAX Year FROM table WHERE Entrant = team tyrrell AND Points > 14
+"Which club had 1, draw, 11 lost, and a try bonus of 7?",SELECT Club FROM table WHERE Drawn = 1 AND Lost = 11 AND Try bonus = 7
+How many tries against were there when there was 961 points against?,SELECT Tries against FROM table WHERE Points against = 961
+Which of the clubs had 556 points against?,SELECT Club FROM table WHERE Points against = 556
+How many tries against were there with 17 losses?,SELECT Tries against FROM table WHERE Lost = 17
+How many losses were there with 103 tries for?,SELECT Lost FROM table WHERE Tries for = 103
+Name the highest revenue for schalke 04 with rank less than 10,SELECT MAX Revenue ($M) FROM table WHERE Team = schalke 04 AND Rank < 10
+Name the rank for tottenham hotspur,SELECT Rank FROM table WHERE Team = tottenham hotspur
+Name the least revenue for chelsea of england with rank less than 7,SELECT MIN Revenue ($M) FROM table WHERE Country = england AND Team = chelsea AND Rank < 7
+Name the total number of value for revenue more than 193 and rank less than 12 for manchester united,SELECT COUNT Value ($M) FROM table WHERE Revenue ($M) > 193 AND Rank < 12 AND Team = manchester united
+"What is the lowest rank of Qaanaaq, which has a population greater than 231?",SELECT MIN Rank FROM table WHERE Population > 231 AND Name = qaanaaq
+What is the rank of the town with a population of 258?,SELECT COUNT Rank FROM table WHERE Population = 258
+"In what Year is the Isis Population 4,082 and the Regional Population less than 55,990?","SELECT COUNT Year FROM table WHERE Population (Isis) = 4,082 AND Population (Region total) < 55,990"
+"When the Isis Population is 3,718 and the Gooburrum Population is less than 4,776, what is the highest Woongarra Population?","SELECT MAX Population (Woongarra) FROM table WHERE Population (Isis) = 3,718 AND Population (Gooburrum) < 4,776"
+"When is a Decision of osgood, and a Score of 6 – 7?",SELECT Date FROM table WHERE Decision = osgood AND Score = 6 – 7
+"When has an Attendance larger than 20,066 in tampa bay?","SELECT Date FROM table WHERE Attendance > 20,066 AND Home = tampa bay"
+"What date has a Decision of osgood, and a Score of 3 – 4?",SELECT Date FROM table WHERE Decision = osgood AND Score = 3 – 4
+List a name that has a heat of at least 3 and a Lane of exactly 5.,SELECT Name FROM table WHERE Heat > 3 AND Lane = 5
+Name the sum of time for lane of 1 and rank less than 8,SELECT SUM Time FROM table WHERE Lane = 1 AND Rank < 8
+Name the championship with reign of 8,SELECT Championship FROM table WHERE Reign = 8
+Name the days for current champions of dean ambrose,SELECT Days held FROM table WHERE Current champion(s) = dean ambrose
+Name the location of reign 3,SELECT Location FROM table WHERE Reign = 3
+Name the date won for wwe intercontinental championship,SELECT Date won FROM table WHERE Championship = wwe intercontinental championship
+When was Ranma ½: netsuretsu kakutouhen first release by Banpresto?,SELECT Initial Release Date FROM table WHERE Publisher = banpresto AND Japanese Title = ranma ½: netsuretsu kakutouhen
+In what genre did Microvision develop a game?,SELECT Genre FROM table WHERE Developer = microvision
+What genre is the Banpresto game tittled Ranma ½: netsuretsu kakutouhen?,SELECT Genre FROM table WHERE Developer = banpresto AND Japanese Title = ranma ½: netsuretsu kakutouhen
+"Position of defensive back, and an Overall smaller than 69 is what lowest pick #?",SELECT MIN Pick # FROM table WHERE Position = defensive back AND Overall < 69
+"Round of 11, and a Pick # larger than 14 is the highest overall pick?",SELECT MAX Overall FROM table WHERE Round = 11 AND Pick # > 14
+Overall of 208 occurred in what round?,SELECT Round FROM table WHERE Overall = 208
+"what player has To par of –3, and a Score of 73-68=141?",SELECT Player FROM table WHERE To par = –3 AND Score = 73-68=141
+what was steve flesch's to par when he was placed at t3 in the united states?,SELECT To par FROM table WHERE Place = t3 AND Country = united states AND Player = steve flesch
+where did arron oberholser play?,SELECT Country FROM table WHERE Player = arron oberholser
+what's the score in canada with place of t8?,SELECT Score FROM table WHERE Country = canada AND Place = t8
+How many people attended the game on June 18?,SELECT COUNT Attendance FROM table WHERE Date = june 18
+When was the earliest first game with 11 played and 12 games lost?,SELECT MIN First game FROM table WHERE Played > 11 AND Lost = 12
+What is the average number of games played associated with a first game in 1997 and over 0 games drawn?,SELECT AVG Played FROM table WHERE First game = 1997 AND Drawn > 0
+How many first games are associated with 5 games played and under 3 games lost?,SELECT SUM First game FROM table WHERE Played = 5 AND Lost < 3
+How many games drawn when there are 78 losses and over 121 games played?,SELECT COUNT Drawn FROM table WHERE Lost = 78 AND Played > 121
+How many times was there a draw when played is more than 4 and the first game is in 2000?,SELECT Drawn FROM table WHERE Played > 4 AND First game = 2000
+what is the most games lost when there were 0 draws?,SELECT MAX Lost FROM table WHERE Drawn < 0
+"what is the highest number of games played when there was 2 losses, percentage was 0.00% and more than 0 draws?",SELECT MAX Played FROM table WHERE Lost = 2 AND Percentage = 0.00% AND Drawn > 0
+what is the most lost games when the percentage is 50.00% and games played is less than 2?,SELECT MAX Lost FROM table WHERE Percentage = 50.00% AND Played < 2
+how many draws are there when percentage is 100.00% and played is 7?,SELECT Drawn FROM table WHERE Percentage = 100.00% AND Played = 7
+how many times is there more than 0 draws and more than 0 losses?,SELECT COUNT Played FROM table WHERE Drawn > 0 AND Lost > 0
+"Which Club has a Not winning editions of 1992, 2003?","SELECT Club FROM table WHERE Not winning editions = 1992, 2003"
+Who Finalists has a Club of győri?,SELECT Finalists FROM table WHERE Club = győri
+"Who is Winners that has  editions of 1992, 2003 as Not Winning","SELECT Winners FROM table WHERE Not winning editions = 1992, 2003"
+"What is the Finalists that has 2008, 2012, 2013 as Not winning editions","SELECT Finalists FROM table WHERE Not winning editions = 2008, 2012, 2013"
+What engine was in the Theodore n183?,SELECT Engine FROM table WHERE Chassis = theodore n183
+Who is listed as the Winners with a Year of 2005?,SELECT Winners FROM table WHERE Year = 2005
+Which Venue has a Year of 2005?,SELECT Venue FROM table WHERE Year = 2005
+What is the score when november 15 is the date?,SELECT Score FROM table WHERE Date = november 15
+What record has November 15 as the date?,SELECT Record FROM table WHERE Date = november 15
+What tournament what held in Cincinnati in 2009?,SELECT 2009 FROM table WHERE Tournament = cincinnati
+How many games played when the points for is 369?,SELECT Played FROM table WHERE Points for = 369
+what is the club that as 100 tries?,SELECT Club FROM table WHERE Tries for = 100
+what is the points for when the club has 0 drawn and 60 tries against?,SELECT Points for FROM table WHERE Drawn = 0 AND Tries against = 60
+How many draws are for the club senghenydd rfc?,SELECT Drawn FROM table WHERE Club = senghenydd rfc
+What is senghenydd rfc's points for?,SELECT Points for FROM table WHERE Club = senghenydd rfc
+what is the amount lost when there is 1 draw and 515 points?,SELECT Lost FROM table WHERE Drawn = 1 AND Points for = 515
+In which year was Angélica Rivera a nominee?,SELECT AVG Year FROM table WHERE Nominee = angélica rivera
+What is the average lap of the race with a 23 finish?,SELECT AVG Laps FROM table WHERE Finish = 23
+What is the lowest lap with a 145.926 qual?,SELECT MIN Laps FROM table WHERE Qual = 145.926
+What is the finish with 51 laps?,SELECT Finish FROM table WHERE Laps = 51
+How many laps were in 1958?,SELECT SUM Laps FROM table WHERE Year = 1958
+What is the smallest area (sq mi) that has 160 as it rank?,SELECT MIN Area (sq mi) FROM table WHERE Rank = 160
+"Which rank has a smaller area (sq mi) than 48, and an area (km2) greater than 104, and an island of sula, sogn og fjordane?","SELECT Rank FROM table WHERE Area (sq mi) < 48 AND Area (km²) > 104 AND Island = sula, sogn og fjordane"
+with Distribution of 10.6% what is the average api level?,SELECT AVG API level FROM table WHERE Distribution = 10.6%
+"with release date of february 9, 2011, what is the api level?","SELECT AVG API level FROM table WHERE Release date = february 9, 2011"
+"with api level 3, what is the code name?",SELECT Code name FROM table WHERE API level = 3
+with distribution of 20.6% what is the code name?,SELECT Code name FROM table WHERE Distribution = 20.6%
+"with api level of 18, what's the code name?",SELECT Code name FROM table WHERE API level = 18
+Which entrant had fewer than 33 points in 1999?,SELECT Entrant FROM table WHERE Points < 33 AND Year = 1999
+Which chassis had 16 points?,SELECT Chassis FROM table WHERE Points = 16
+Which gc37-01 v10 engine has the fewest points?,SELECT MIN Points FROM table WHERE Engine = gc37-01 v10
+"How many votes did Other receive where Bush received less than 154,204 votes, and Kerry received 41.7% and more than 98,066 votes?","SELECT COUNT Others # FROM table WHERE Bush # < 154,204 AND Kerry % = 41.7% AND Kerry # > 98,066"
+What was Kerry's lowest number of votes where Other received 0.8% and Kerry 70.4%?,SELECT MIN Kerry # FROM table WHERE Others % = 0.8% AND Kerry % = 70.4%
+"How many votes did Others receive where Kerry has 44.6%, and Bush more than 163,650 votes?","SELECT COUNT Others # FROM table WHERE Kerry % = 44.6% AND Bush # > 163,650"
+Which Title has a Termination of Mission of current?,SELECT Title FROM table WHERE Termination of Mission = current
+"Which Appointed has Termination of Mission on april 7, 2005?","SELECT Appointed by FROM table WHERE Termination of Mission = april 7, 2005"
+"Which Appointed has a Presentation of Credentials on November 22, 1990","SELECT Appointed by FROM table WHERE Presentation of Credentials = november 22, 1990"
+"Which Representative has a Presentation of Credentials on september 8, 2005?","SELECT Representative FROM table WHERE Presentation of Credentials = september 8, 2005"
+"Which Termination of Mission has a Presentation of Credentials on October 29, 1981","SELECT Termination of Mission FROM table WHERE Presentation of Credentials = october 29, 1981"
+What is the total for danny allsopp?,SELECT Total FROM table WHERE Name = danny allsopp
+Where is the area of operation that had drilling during the year 1999?,SELECT Area of Operation FROM table WHERE Services = drilling AND Years of Operation = 1999
+What country did the client Agiba-agip work in?,SELECT Country FROM table WHERE Client = agiba-agip
+What years was soc a client?,SELECT Years of Operation FROM table WHERE Client = soc
+What years was El Mabrouk the area of operation?,SELECT Years of Operation FROM table WHERE Area of Operation = el mabrouk
+What services were in the area of operation Wadi Borjuj?,SELECT Services FROM table WHERE Area of Operation = wadi borjuj
+How many points did the Cosworth v8 engine get in 1972?,SELECT Points FROM table WHERE Year = 1972 AND Engine = cosworth v8
+"Which gold Coast has a Melbourne of yes, a Perth of yes, an Auckland of no, and a Sydney of no?",SELECT Gold Coast FROM table WHERE Melbourne = yes AND Perth = yes AND Auckland = no AND Sydney = no
+Which Adelaide has an Auckland of no and a Melbourne of no?,SELECT Adelaide FROM table WHERE Auckland = no AND Melbourne = no
+"Which Sydney has a Gold Coast of yes, an Adelaide of no, and an Auckland of yes?",SELECT Sydney FROM table WHERE Gold Coast = yes AND Adelaide = no AND Auckland = yes
+"Which Sydney has a Perth of no, an Adelaide of yes, and a Gold Coast of no?",SELECT Sydney FROM table WHERE Perth = no AND Adelaide = yes AND Gold Coast = no
+"Which Adelaide has a Sydney of yes, a Perth of no, a Melbourne of yes, and an Auckland of no?",SELECT Adelaide FROM table WHERE Sydney = yes AND Perth = no AND Melbourne = yes AND Auckland = no
+"Which Melbourne has a Perth of yes, and an Auckland of yes?",SELECT Melbourne FROM table WHERE Perth = yes AND Auckland = yes
+what is the analog type for wxmi?,SELECT Analog FROM table WHERE Callsign = wxmi
+what is the callsign for independent affiliation?,SELECT Callsign FROM table WHERE Affiliation = independent
+what is the analog type for cw on digital 26?,SELECT Analog FROM table WHERE Affiliation = cw AND Digital = 26
+what is the callsign for analog 19?,SELECT Callsign FROM table WHERE Analog = 19
+Who is the winner of the European Poker Tour Grand Final?,SELECT Winner FROM table WHERE Event = european poker tour grand final
+"What is the name of the event that had a prize of zł 1,226,711?","SELECT Event FROM table WHERE Prize = zł 1,226,711"
+"Who was the winner of the prize zł 1,226,711?","SELECT Winner FROM table WHERE Prize = zł 1,226,711"
+What is the score of Goal For which has a Ties larger 0?,SELECT MIN Goals For FROM table WHERE Ties > 0
+Name the sum of goals conceded when lost is more than 7 and points less than 26,SELECT SUM Goals Conceded FROM table WHERE Lost > 7 AND Points < 26
+Name the most place for goals scored more than 28 and played less than 18,SELECT MAX Place FROM table WHERE Goals Scored > 28 AND Played < 18
+Name the D46 when it has D 44 of ← majority,SELECT D 46 FROM table WHERE D 44 = ← majority
+Name the D 45 which has D 44 of d 53,SELECT D 45 FROM table WHERE D 44 = d 53
+Name the D 43 when it has D 45 of d 25,SELECT D 43 FROM table WHERE D 45 = d 25
+Name the D 43 when it has D 41 of d 56,SELECT D 43 FROM table WHERE D 41 = d 56
+Name the D 46 which has D 42 of r 14,SELECT D 46 FROM table WHERE D 42 = r 14
+Which nominating festival did Russia enter?,SELECT Nominating Festival FROM table WHERE Country = russia
+Which nominating festival did Olga Baillif enter?,SELECT Nominating Festival FROM table WHERE Director(s) = olga baillif
+Which nominating festival did Bosnia and Herzegovina enter?,SELECT Nominating Festival FROM table WHERE Country = bosnia and herzegovina
+Which director made Mi-temps?,SELECT Director(s) FROM table WHERE Film = mi-temps
+Which nominating festival did United Kingdom enter?,SELECT Nominating Festival FROM table WHERE Country = united kingdom
+"What 2013 album was produced by sachin-jigar and contained the song ""mann basiyo sanwariyo""?","SELECT Album FROM table WHERE Composer = sachin-jigar AND Year = 2013 AND Song = ""mann basiyo sanwariyo"""
+How many years was Audi Sport Team Joest in 3rd position?,SELECT COUNT Year FROM table WHERE Team = audi sport team joest AND Pos. = 3rd
+Who were the co-drivers with more than 377 laps in 1st position?,SELECT Co-Drivers FROM table WHERE Laps > 377 AND Pos. = 1st
+How many goals were scored when they had over 28 points and played over 18 games?,SELECT MAX Goals Scored FROM table WHERE Points > 28 AND Played > 18
+"What place is associated with under 28 points, under 11 games lost, and under 18 games played?",SELECT SUM Place FROM table WHERE Points < 28 AND Lost < 11 AND Played < 18
+"How many points are there when they have under 27 goals scored, conceded 24 goals, and lost less than 6 times?",SELECT SUM Points FROM table WHERE Goals Scored < 27 AND Goals Conceded = 24 AND Lost < 6
+What year did Bryant Heating enter?,SELECT SUM Year FROM table WHERE Entrant = bryant heating
+Russia has films in which category?,SELECT Category FROM table WHERE Country = russia
+The Prix UIP Vilo Do Conde festival nominated which film?,SELECT Film FROM table WHERE Nominating Festival = prix uip vilo do conde
+Which country made Le Portefeuille?,SELECT Country FROM table WHERE Film = le portefeuille
+Which nominating festival nominated Iao Lethem's film?,SELECT Nominating Festival FROM table WHERE Director(s) = iao lethem
+Julio Robledo represents which country?,SELECT Country FROM table WHERE Director(s) = julio robledo
+(A) Torzija was nominated in which category?,SELECT Category FROM table WHERE Film = (a) torzija
+"How many losses altogether were had by teams that won 12 times, had 40-4 points, and more than 57 goals?",SELECT SUM Losses FROM table WHERE Wins = 12 AND Points = 40-4 AND Goals for > 57
+What's the average number of played games from Rayo Vallecano with less than 12 wins?,SELECT AVG Played FROM table WHERE Club = rayo vallecano AND Wins < 12
+"Who has canidae as family and canis rufus audubon & bachman, 1851 as species/authority?","SELECT Name FROM table WHERE Family = canidae AND Species/Authority = canis rufus audubon & bachman, 1851"
+Name the lowest league for play-offs more than 0 and total of 25,SELECT MIN League FROM table WHERE Play-offs > 0 AND Total = 25
+What are the earliest year with games played fewer than 2?,SELECT MIN First game FROM table WHERE Played < 2
+What is the number of games played in the season before 2005?,SELECT SUM Played FROM table WHERE First game < 2005
+Name the least selection for ron barnett,SELECT MIN Selection FROM table WHERE Player = ron barnett
+Name the player that went to notre dame,SELECT Player FROM table WHERE College = notre dame
+What is the to par that has bill collins as the player?,SELECT To par FROM table WHERE Player = bill collins
+How much money has 76-70-68-73=287 as a score?,SELECT SUM Money ( $ ) FROM table WHERE Score = 76-70-68-73=287
+What is the commissioned for Vietnam?,SELECT Commissioned FROM table WHERE Operator = vietnam
+"What is the commissioned with a 636.3 project, and ordered status?",SELECT Commissioned FROM table WHERE Project = 636.3 AND Status = ordered
+When was the date that had a Loss of Shirley (0-1)?,SELECT Date FROM table WHERE Loss = shirley (0-1)
+"Where was the game on Thursday, April 29, and they played the Chicago Cubs?","SELECT Site FROM table WHERE Opponent = chicago cubs AND Date = thursday, april 29"
+Who were they playing when Bird (1-4) had a loss?,SELECT Opponent FROM table WHERE Loss = bird (1-4)
+What was the score of the game when there was a loss of Kern (0-2)?,SELECT Score FROM table WHERE Loss = kern (0-2)
+"What camera has the highest Mpix with an aspect ratio of 2:1, a height less than 1536, and a width smaller than 2048?",SELECT MAX Mpix FROM table WHERE Aspect Ratio = 2:1 AND Height < 1536 AND Width < 2048
+What is the max fps of a camera with mpix larger than 8.4 and frame size of 4k 16:9?,SELECT COUNT max. fps FROM table WHERE Mpix > 8.4 AND Frame size = 4k 16:9
+"What frame size corresponds the selection with a max fps of 120, a width of 2048, and height of 1024?",SELECT Frame size FROM table WHERE max. fps = 120 AND Width = 2048 AND Height = 1024
+What is the overall record of the Ravens?,SELECT Overall Record FROM table WHERE Team = ravens
+What is the division record of Sussex Central?,SELECT Division Record FROM table WHERE School = sussex central
+Which Engine has Points of 3?,SELECT Engine FROM table WHERE Points = 3
+"What are the highest points with a Chassis of gordini t16, and a Year smaller than 1954?",SELECT MAX Points FROM table WHERE Chassis = gordini t16 AND Year < 1954
+What is the lowest grid that Paul Tracy had when he had over 4 points?,SELECT MIN Grid FROM table WHERE Name = paul tracy AND Points > 4
+"What is the Date, when the Winner is Aaron Gustavson?",SELECT Date FROM table WHERE Winner = aaron gustavson
+"What is the Date, when the City is Warsaw?",SELECT Date FROM table WHERE City = warsaw
+"What is the Prize, when the Winner is Aaron Gustavson?",SELECT Prize FROM table WHERE Winner = aaron gustavson
+"Who is the Winner, when the City is Berlin?",SELECT Winner FROM table WHERE City = berlin
+What is the name of the party called name?,SELECT Party FROM table WHERE Name = name
+What is the Left Office of cabinet secretary for culture and external affairs named?,SELECT Name FROM table WHERE Left Office = cabinet secretary for culture and external affairs
+What left office does the First Minister of henry mcleish belong to?,SELECT Left Office FROM table WHERE First Minister = henry mcleish
+"In what year was the Population of Eacham 6,074 and the population of Atherton was less than 10,119?","SELECT SUM Year FROM table WHERE Population (Eacham) = 6,074 AND Population (Atherton) < 10,119"
+"What was the population of Herberton when Mareeba had 17,129 people and Eacham had a population smaller than 5,609?","SELECT SUM Population (Herberton) FROM table WHERE Population (Mareeba) = 17,129 AND Population (Eacham) < 5,609"
+"What was the sum total of the region after 1976 when Mareeba had population was more than 18,212?","SELECT SUM Population (Region total) FROM table WHERE Year > 1976 AND Population (Mareeba) > 18,212"
+"Name the most games for standing of 5th, lebel and goals against larger than 220 with lost more than 52","SELECT MAX Games FROM table WHERE Standing = 5th, lebel AND Goals against > 220 AND Lost > 52"
+Name the least tied with games more than 70 and goals for less than 310 with points of 98,SELECT MIN Tied FROM table WHERE Games > 70 AND Goals for < 310 AND Points = 98
+Which player had a place of T4?,SELECT Player FROM table WHERE Place = t4
+What is the latest year with less than 0 points?,SELECT MAX Year FROM table WHERE Points < 0
+What entrant has a year earlier than 1960 and a veritas straight-6 engine?,SELECT Entrant FROM table WHERE Year < 1960 AND Engine = veritas straight-6
+What is the average Year with a Veritas rs chassis and more than 0 points?,SELECT AVG Year FROM table WHERE Chassis = veritas rs AND Points > 0
+What is the number of points for the Entrant of wolfgang seidel and a Cooper t45 chassis later than 1960?,SELECT COUNT Points FROM table WHERE Entrant = wolfgang seidel AND Chassis = cooper t45 AND Year > 1960
+What is the latest year for a Emeryson 1006 chassis with more than 0 points?,SELECT MAX Year FROM table WHERE Chassis = emeryson 1006 AND Points > 0
+What was the score of the second leg with an agg of 4-6?,SELECT 2nd leg FROM table WHERE Agg. = 4-6
+What is the second team that has first team of Africa sports?,SELECT Team 2 FROM table WHERE Team 1 = africa sports
+What is team one that has tp englebert for team 2?,SELECT Team 1 FROM table WHERE Team 2 = tp englebert
+Which team 2 has a 2nd leg of 0-2?,SELECT Team 2 FROM table WHERE 2nd leg = 0-2
+Which team has far rabat as the team 1?,SELECT Team 2 FROM table WHERE Team 1 = far rabat
+What is the agg for a team second leg of 1-3?,SELECT Agg. FROM table WHERE 2nd leg = 1-3
+with a Time/Retired of +47.376 what is the lap sum?,SELECT SUM Laps FROM table WHERE Time/Retired = +47.376
+"with a Rider of marco melandri, and a Grid smaller than 10, what is the highest lap count?",SELECT MAX Laps FROM table WHERE Rider = marco melandri AND Grid < 10
+"with more than 32 laps and sylvain guintoli as rider, what's the lowest grid ?",SELECT MIN Grid FROM table WHERE Rider = sylvain guintoli AND Laps > 32
+Who came in 2nd place when Ding Junhui won in 2010?,SELECT Runner-up FROM table WHERE Year > 2010 AND Winner = ding junhui
+"What ethnic group is 65,104 in 1931?","SELECT Malay Ethnic Group FROM table WHERE 1931 = 65,104"
+"For Vegas Verdicts week, what was the result?",SELECT Result FROM table WHERE Week = vegas verdicts
+Which week had a theme of Heroes?,SELECT Week FROM table WHERE Theme = heroes
+What was the theme for Vegas Verdicts week with a result of Advanced?,SELECT Theme FROM table WHERE Result = advanced AND Week = vegas verdicts
+"What is the Placement when the Votes are fewer than 208, and when the Candidate is Jordan Turner?",SELECT Placement FROM table WHERE Votes < 208 AND Candidate = jordan turner
+Who is the Candidate when the Riding is Hochelaga?,SELECT Candidate FROM table WHERE Riding = hochelaga
+What is the Placement when the Candidate is Jean-Patrick Berthiaume?,SELECT Placement FROM table WHERE Candidate = jean-patrick berthiaume
+What is the value for the League Cup when the FA Cup value is 0 13 0 (49)?,SELECT League Cup FROM table WHERE FA Cup = 0 13 0 (49)
+What is the League Cup value for 1991–present?,SELECT League Cup FROM table WHERE Years = 1991–present
+What league has a value of 0 29 (152) for Europe?,SELECT League FROM table WHERE Europe = 0 29 (152)
+Which week was there a w 23–14 result?,SELECT Week FROM table WHERE Result = w 23–14
+Name the score for hawthorn opponent,SELECT Score FROM table WHERE Opponent = hawthorn
+Name the score at mcg venue and footscray opponent,SELECT Score FROM table WHERE Venue = mcg AND Opponent = footscray
+Name the venue with opponent of collingwood,SELECT Venue FROM table WHERE Opponent = collingwood
+"When has Result of 2–0, and a Score of 2 – 0?",SELECT Date FROM table WHERE Result = 2–0 AND Score = 2 – 0
+"Which Venue has a Goal larger than 3, and a Competition of 2011 afc asian cup?",SELECT Venue FROM table WHERE Goal > 3 AND Competition = 2011 afc asian cup
+Name the casualities for nation of incident of hostile on 2006-06-26,SELECT Casualties FROM table WHERE Nature of incident = hostile AND Date = 2006-06-26
+Name the casualities for kabul area,SELECT Casualties FROM table WHERE Location = kabul area
+Name the location on 2006-04-07 for direct fire,SELECT Location FROM table WHERE Date = 2006-04-07 AND Circumstances = direct fire
+"Which venue has a Date of 20,21,22,23,24 november 1998?","SELECT Venue FROM table WHERE Date = 20,21,22,23,24 november 1998"
+"Which Away captain has a Date of 26,27,28,29 december 1998?","SELECT Away captain FROM table WHERE Date = 26,27,28,29 december 1998"
+Which venue has a Result of draw?,SELECT Venue FROM table WHERE Result = draw
+Which Home captain has a Venue of melbourne cricket ground?,SELECT Home captain FROM table WHERE Venue = melbourne cricket ground
+"Which Away captain has a Date of 2,3,4,5 january 1999?","SELECT Away captain FROM table WHERE Date = 2,3,4,5 january 1999"
+What was the margin of victory for the win with a score of 71-69-71-70=281?,SELECT Margin of victory FROM table WHERE Winning score = 71-69-71-70=281
+What is the to par value for the game with a winning score of 71-69-71-70=281?,SELECT To par FROM table WHERE Winning score = 71-69-71-70=281
+For what tournament was Bubba Watson the runner-up?,SELECT Tournament FROM table WHERE Runner(s)-up = bubba watson
+"When John Senden was the runner-up, what was the To Par?",SELECT To par FROM table WHERE Runner(s)-up = john senden
+"In 1988, what Metro Champion had a Runner-up of Memphis State?",SELECT Metro Champion FROM table WHERE Runner-up = memphis state AND Year = 1988
+"What is the latest year a ride opened that was manufactured by Zamperla, was a convoy ride, and had a name of Tiny Truckers?",SELECT MAX Opened in FROM table WHERE Manufacture = zamperla AND Type = convoy ride AND Ride Name = tiny truckers
+Who is the manufacturer of the mini jet red baron ride that opened before 2001?,SELECT Manufacture FROM table WHERE Opened in < 2001 AND Type = mini jet red baron
+Name the least year for les triplettes de belleville,SELECT MIN Year FROM table WHERE Original title = les triplettes de belleville
+Name the english title for zhang yimou,SELECT English title FROM table WHERE Director = zhang yimou
+Name the country for 2002,SELECT Country FROM table WHERE Year = 2002
+Name the english title for mexico/spain/usa,SELECT English title FROM table WHERE Country = mexico/spain/usa
+Name the country with year more than 2008,SELECT Country FROM table WHERE Year > 2008
+What year did the Cosworth v8 engine participate in?,SELECT AVG Year FROM table WHERE Engine = cosworth v8
+Which year did the team receive more than 0 points?,SELECT AVG Year FROM table WHERE Points > 0
+Which chassis was used in 1971?,SELECT Chassis FROM table WHERE Year = 1971
+What was the time for Jean Luc Razakarivony with less than 3 heat and more than 2 lanes?,SELECT Time FROM table WHERE Heat < 3 AND Lane > 2 AND Name = jean luc razakarivony
+What was Domenico Fioravanti's time on lane 5?,SELECT Time FROM table WHERE Lane = 5 AND Name = domenico fioravanti
+"What is the nationality with less than 9 heat, and a time of 1:01.87?",SELECT Nationality FROM table WHERE Heat < 9 AND Time = 1:01.87
+On which dates played Home Captain Courtney Walsh at the Queen's Park Oval?,SELECT Date FROM table WHERE Home captain = courtney walsh AND Venue = queen's park oval
+On what dates did the draw at the Antigua Recreation Ground happen?,SELECT Date FROM table WHERE Result = draw AND Venue = antigua recreation ground
+Who was the Home Captain at Sabina Park?,SELECT Home captain FROM table WHERE Venue = sabina park
+When did the draw happen?,SELECT Date FROM table WHERE Result = draw
+When did Northeastern University join?,SELECT SUM Joined FROM table WHERE Institution = northeastern university
+"Which type of institution is in Amherst, MA?","SELECT Type FROM table WHERE Location = amherst, ma"
+What is the tenure of the person whose courtesy title is yamashiro-no-kami?,SELECT Tenure FROM table WHERE Courtesy title = yamashiro-no-kami
+What is the courtesy title of the person whose tenure goes from 1766–1794?,SELECT Courtesy title FROM table WHERE Tenure = 1766–1794
+What is the bronze value associated with ranks over 5?,SELECT Bronze FROM table WHERE Rank > 5
+What is the highest number of bronzes for countries ranking over 5 with 0 golds?,SELECT MAX Bronze FROM table WHERE Rank > 5 AND Gold < 0
+Name the loss for june 22,SELECT Loss FROM table WHERE Date = june 22
+Name the loss for june 30,SELECT Loss FROM table WHERE Date = june 30
+"Name the score on august 21, 2007","SELECT Score FROM table WHERE Date = august 21, 2007"
+"Name the competition on august 25, 2007","SELECT Competition FROM table WHERE Date = august 25, 2007"
+"Name the competition that was on august 25, 2007","SELECT Competition FROM table WHERE Date = august 25, 2007"
+"Name the result for january 14, 2008","SELECT Result FROM table WHERE Date = january 14, 2008"
+How many matches played are associated with 20 losses?,SELECT Played FROM table WHERE Lost = 20
+How many matches have Rhymney RFC played?,SELECT Played FROM table WHERE Club = rhymney rfc
+How many losses does Abercarn RFC have?,SELECT Lost FROM table WHERE Club = abercarn rfc
+When did a Position of 21st (q) happen?,SELECT Year FROM table WHERE Position = 21st (q)
+What is the Venue before 2003 with Notes of 57.73 m?,SELECT Venue FROM table WHERE Year < 2003 AND Notes = 57.73 m
+What notes have the 8th position?,SELECT Notes FROM table WHERE Position = 8th
+Where was European Championships held with notes of 61.46 m?,SELECT Venue FROM table WHERE Competition = european championships AND Notes = 61.46 m
+What is the 0–100km/h (62mph) when the max power is s diesel engine all direct injection (dci)?,SELECT 0–100km/h (62mph) FROM table WHERE max. power = s diesel engine all direct injection (dci)
+What is the engine type where the 0–100km/h (62mph) is 11.2 sec?,SELECT engine type FROM table WHERE 0–100km/h (62mph) = 11.2 sec
+Name the original name for last days of the victim,SELECT Original name FROM table WHERE Film title used in nomination = last days of the victim
+Name the film title for okkar á milli: í hita og þunga dagsins,SELECT Film title used in nomination FROM table WHERE Original name = okkar á milli: í hita og þunga dagsins
+Name the film title that was norwegian,SELECT Film title used in nomination FROM table WHERE Language = norwegian
+Name the film title for german,SELECT Film title used in nomination FROM table WHERE Language = german
+Name the original name for the one from bulgaria,SELECT Original name FROM table WHERE Country = bulgaria
+"who was the opponent when the attendance was larger than 54,766?","SELECT Opponent FROM table WHERE Attendance > 54,766"
+What was the attendance when the series was at 0-1?,SELECT Attendance FROM table WHERE Series = 0-1
+Who was the opponent when the series was at 1-3?,SELECT Opponent FROM table WHERE Series = 1-3
+what was the score in the loss to tapani (0-1)?,SELECT Score FROM table WHERE Loss = tapani (0-1)
+What id the team with a smaller Time than 18?,SELECT Team #1 FROM table WHERE Time ( CEST ) < 18
+What is the location of the match with the record 10-8-1?,SELECT Location FROM table WHERE Record = 10-8-1
+"What is the method of the match in the Road fc 12 at 5:00 with less than 3 rounds, and a loss result?",SELECT Method FROM table WHERE Time = 5:00 AND Round < 3 AND Res. = loss AND Event = road fc 12
+What is the record of the match at 6:00?,SELECT Record FROM table WHERE Time = 6:00
+What is the method of the match with a 3-4 record?,SELECT Method FROM table WHERE Record = 3-4
+What is the location of the match with a round bigger than 1 where the opponent was Yoshihiro Akiyama?,SELECT Location FROM table WHERE Round > 1 AND Opponent = yoshihiro akiyama
+What is the average round of the match with a draw result and a record of 4-4-1?,SELECT AVG Round FROM table WHERE Res. = draw AND Record = 4-4-1
+What is the average round of the match in the Hero's 9 event with a time of 5:00?,SELECT AVG Round FROM table WHERE Time = 5:00 AND Event = hero's 9
+What shows as the First US Tour Cast when the Original Broadway Cast was Sarah Bolt?,SELECT First US Tour Cast FROM table WHERE Original Broadway Cast = sarah bolt
+What is the name of the person in the First UK Tour Cast for the Character of Sister Mary Robert?,SELECT First UK Tour Cast FROM table WHERE Character = sister mary robert
+What character did Katie Rowley Jones play in the Original West End Cast?,SELECT Character FROM table WHERE Original West End Cast = katie rowley jones
+Who was the Original West End Cast when the irst US Tour Cast was lael van keuren?,SELECT Original West End Cast FROM table WHERE First US Tour Cast = lael van keuren
+Who was in the Original West End Cast when the Original Broadway Cast was audrie neenan?,SELECT Original West End Cast FROM table WHERE Original Broadway Cast = audrie neenan
+What is the name of the person who was in the Original Broadway Cast that was Original West End Cast of sheila hancock?,SELECT Original Broadway Cast FROM table WHERE Original West End Cast = sheila hancock
+Dave Douglas has what score?,SELECT Score FROM table WHERE Player = dave douglas
+Who has more than 70 score with +1 to par?,SELECT Player FROM table WHERE Score > 70 AND To par = +1
+What game did they lose by 6 - 5?,SELECT Loss FROM table WHERE Score = 6 - 5
+What is the original title of the film from years after 1985 from the UK?,SELECT Original title FROM table WHERE Year > 1985 AND Country = uk
+What is the English title for years after 1981 originating from Argentina?,SELECT English title FROM table WHERE Year > 1981 AND Country = argentina
+What is the English title for 1984 from Sweden?,SELECT English title FROM table WHERE Year = 1984 AND Country = sweden
+What is the English title for the film directed by George Miller?,SELECT English title FROM table WHERE Director = george miller
+What is the Country of origin for the film directed by George Miller?,SELECT Country FROM table WHERE Director = george miller
+How many golds for west germany with over 8 total?,SELECT MIN Gold FROM table WHERE Nation = west germany AND Total > 8
+How many golds for nations with under 1 bronze?,SELECT SUM Gold FROM table WHERE Bronze < 1
+How many total medals for the nation ranked 7 with 1 silver and under 4 bronzes?,SELECT AVG Total FROM table WHERE Bronze < 4 AND Silver = 1 AND Rank = 7
+Name the city of license when founded was may 1995,SELECT City of License FROM table WHERE Founded = may 1995
+Name the city of license for when founded is october 2010,SELECT City of License FROM table WHERE Founded = october 2010
+"Name the coverage area for licesne of hillsboro, west virginia","SELECT Coverage Area FROM table WHERE City of License = hillsboro, west virginia"
+Name the city of license which has age Watt of 160 watts,SELECT City of License FROM table WHERE age Watt = 160 watts
+Name the city of license with frequency of 103.5 mhz,SELECT City of License FROM table WHERE Frequency = 103.5 mhz
+What is the catalog number of Alfa records?,SELECT Catalog FROM table WHERE Label = alfa records
+Which player has 68 as the score and canada as the country?,SELECT Player FROM table WHERE Score = 68 AND Country = canada
+What place has Canada as the country?,SELECT Place FROM table WHERE Country = canada
+Which player has 69 as the score?,SELECT Player FROM table WHERE Score = 69
+"What place has a score greater than 68, and camilo villegas as the player?",SELECT Place FROM table WHERE Score > 68 AND Player = camilo villegas
+What is the average score with lee westwood as the player?,SELECT AVG Score FROM table WHERE Player = lee westwood
+Name the years with authority of state and decile more than 6 with roll less than 33,SELECT Years FROM table WHERE Authority = state AND Decile > 6 AND Roll < 33
+Name the years for marton and decile of 3 for turakina maori girls' college?,SELECT Years FROM table WHERE Area = marton AND Decile = 3 AND Name = turakina maori girls' college
+"Name the average gold medals when the bronze medals was less than 1, silver medals being 0 and total medals more than 1",SELECT AVG Gold Medals FROM table WHERE Bronze Medals < 1 AND Silver Medals = 0 AND Total Medals > 1
+"Name the total number of bronze medals when gold medals was 2, total medals more than 4 and silver medals less than 5",SELECT COUNT Bronze Medals FROM table WHERE Gold Medals = 2 AND Total Medals > 4 AND Silver Medals < 5
+Name the ensemble with silver medals more than 1,SELECT Ensemble FROM table WHERE Silver Medals > 1
+Name the average total medals with ensemble of goshen hs,SELECT AVG Total Medals FROM table WHERE Ensemble = goshen hs
+In which category did Nick Jonas win at the Kids' Choice Awards Mexico?,SELECT Category FROM table WHERE Recipient(s) = nick jonas AND Award = kids' choice awards mexico
+What is the award for the Choice TV: Breakout Star Female category?,SELECT Award FROM table WHERE Category = choice tv: breakout star female
+What is Joe Jonas' result at the Kids' Choice Awards Mexico?,SELECT Result FROM table WHERE Recipient(s) = joe jonas AND Award = kids' choice awards mexico
+What category was Joe Jonas nominated for at the Kids' Choice Awards Mexico in 2010?,SELECT Category FROM table WHERE Result = nominated AND Year = 2010 AND Award = kids' choice awards mexico AND Recipient(s) = joe jonas
+What Chassis did Team BMS Scuderia Italia use with G Tyres and a Ferrari 037 3.5 v12 engine?,SELECT Chassis FROM table WHERE Team = bms scuderia italia AND Tyres = g AND Engine = ferrari 037 3.5 v12
+Who was the Rookie of the Year for the Season in 2000?,SELECT Rookie of the Year FROM table WHERE Season = 2000
+"Who was the opponent in the game where the attendance was larger than 23,230 and the record was 56-37?","SELECT Opponent FROM table WHERE Attendance > 23,230 AND Record = 56-37"
+When was the game played in which the record was 46-29?,SELECT Date FROM table WHERE Record = 46-29
+Which type had the unit greifswald - 7 (kgr 7) ?,SELECT Type FROM table WHERE Unit = greifswald - 7 (kgr 7)
+Which unite had the type wwer-440/213?,SELECT Unit FROM table WHERE Type = wwer-440/213
+What was the date that construction was finished when the unit was greifswald - 4 (kgr 4)?,SELECT Finish construction FROM table WHERE Unit = greifswald - 4 (kgr 4)
+"What was the net power, when the type was wwer-440/230, and when construction was finished on 24.10.1977?",SELECT Net Power FROM table WHERE Type = wwer-440/230 AND Finish construction = 24.10.1977
+During what years was álvaro pérez the number 2 ranked player?,SELECT Year(s) FROM table WHERE Rank = 2 AND Player = álvaro pérez
+"What is the average value for Top-5, when the value for Top-25 is 0, and the value for Wins is less than 0?",SELECT AVG Top-5 FROM table WHERE Top-25 = 0 AND Wins < 0
+What is the total amount of Top-25 having a Top-5 greater than 1?,SELECT COUNT Top-25 FROM table WHERE Top-5 > 1
+What is the sum of the value Top-10 that has a Cuts value of 2 and a Wins value smaller than 0?,SELECT SUM Top-10 FROM table WHERE Cuts made = 2 AND Wins < 0
+"What is the average value for Top-5, when the value Cuts is 5, and when the tournament is the Open Championship, and when the value Events is less than 6?",SELECT AVG Top-5 FROM table WHERE Cuts made = 5 AND Tournament = the open championship AND Events < 6
+"What is the lowest value for Events, when the value for Top-5 is greater than 1?",SELECT MIN Events FROM table WHERE Top-5 > 1
+Who was the visiting team on November 10?,SELECT Visiting Team FROM table WHERE Date = november 10
+Who was the host team for the game with the final score of 26-24?,SELECT Host Team FROM table WHERE Final Score = 26-24
+Who was the host team on November 17?,SELECT Host Team FROM table WHERE Date = november 17
+At what stadium was the game with the final score of 9-23 played?,SELECT Stadium FROM table WHERE Final Score = 9-23
+At what stadium was the game with the final score of 26-24 played?,SELECT Stadium FROM table WHERE Final Score = 26-24
+Which host team played against the New England Patriots?,SELECT Host Team FROM table WHERE Visiting Team = new england patriots
+What is the reason the Chief Judge of 1971–1977 was terminated?,SELECT Reason for termination FROM table WHERE Chief Judge = 1971–1977
+"Which state has a Reason for termination of retirement, and an Active service of 1926–1928?",SELECT State FROM table WHERE Reason for termination = retirement AND Active service = 1926–1928
+What is the PI code in the hindhead area?,SELECT PI Code FROM table WHERE Area = hindhead
+What is the frequency with 900w power?,SELECT Frequency FROM table WHERE Power = 900w
+What event ended in 3:02 of round 1?,SELECT Event FROM table WHERE Round = 1 AND Time = 3:02
+What is the highest round reached by an oppo ent of JR schumacher?,SELECT MAX Round FROM table WHERE Opponent = jr schumacher
+Where did arturo segovia compete?,SELECT Location FROM table WHERE Opponent = arturo segovia
+"What is the top fastest time, larger than 2, in Enugu?",SELECT MAX Fastest time (s) FROM table WHERE Location = enugu AND Rank > 2
+How many casualties were from the IED circumstance?,SELECT Casualties FROM table WHERE Circumstances = ied
+Where there any Draws with 45 tries against?,SELECT Drawn FROM table WHERE Tries against = 45
+Which club participated with a record of 45 tries against?,SELECT Club FROM table WHERE Tries against = 45
+What was the amount of draws where a club had 51 tries for?,SELECT Drawn FROM table WHERE Tries for = 51
+How many losses were there with 208 points?,SELECT Lost FROM table WHERE Points for = 208
+Which of the participating clubs had 73 tries for?,SELECT Club FROM table WHERE Tries for = 73
+What car has a March 90ca Chassis?,SELECT Engine FROM table WHERE Chassis = march 90ca
+"What is the latest year that has an engine of cosworth v8, with a chassis of hesketh 308e?",SELECT MAX Year FROM table WHERE Engine = cosworth v8 AND Chassis = hesketh 308e
+Which year has brm v12 as the engine?,SELECT Year FROM table WHERE Engine = brm v12
+What is the latesr year that has more points than 0?,SELECT MAX Year FROM table WHERE Pts. > 0
+What is the corresponding 1930s for 2000 and 1940?,SELECT SUM 1930s FROM table WHERE 2000s = 2000 AND 1940s < 1940
+"What would be the correct year in the 1940s, if the 1980s is before 1986, the 1990s is before 1995, the 1970s is before 1973, and the 2000s are after 2001?",SELECT 1940s FROM table WHERE 1980s < 1986 AND 1990s < 1995 AND 1970s < 1973 AND 2000s > 2001
+"What is the range for the 1980s that correspond to a grid 1910s of 1912, and a 1940s before 1942",SELECT AVG 1980s FROM table WHERE 1910s = 1912 AND 1940s < 1942
+"what is the lowest year in the 1910s that would be in the row were the 1950s are no larger than 1952, and the 1980s are no smaller than 1981?",SELECT MIN 1910s FROM table WHERE 1950s < 1952 AND 1980s > 1981
+"Which is the highest Gold that has a total smaller than 4 and a silver of 1, and a bronze smaller than 2, and a rank of 13?",SELECT MAX Gold FROM table WHERE Total < 4 AND Silver = 1 AND Bronze < 2 AND Rank = 13
+Which nation has a Bronze and Silver smaller than 1 and a Gold larger than 1?,SELECT Nation FROM table WHERE Bronze < 1 AND Silver < 1 AND Gold > 1
+"What was the score of the game that had a round of Rd 26, 2001?","SELECT Score FROM table WHERE Round = rd 26, 2001"
+"What was the loss of the game attended by 37,119?","SELECT Loss FROM table WHERE Attendance = 37,119"
+What was the date of the game that had a loss of lidle (10-8)?,SELECT Date FROM table WHERE Loss = lidle (10-8)
+"What was the loss of the game against the Yankees that was attended by 27,652?","SELECT Loss FROM table WHERE Opponent = yankees AND Attendance = 27,652"
+What is the number of finish of the Qual of 159.384?,SELECT Finish FROM table WHERE Qual = 159.384
+What is the qual for rank 18 in 1964?,SELECT Qual FROM table WHERE Rank = 18 AND Year = 1964
+"On May 13, what was the team's record?",SELECT Record FROM table WHERE Date = may 13
+"On May 26, what was the team's record?",SELECT Record FROM table WHERE Date = may 26
+Who did they lose to on May 20?,SELECT Loss FROM table WHERE Date = may 20
+What was Spring Creek School's area when the decile was 4?,SELECT Area FROM table WHERE Decile = 4 AND Name = spring creek school
+"What is the average Founded for chicopee, massachusetts?","SELECT AVG Founded FROM table WHERE Location = chicopee, massachusetts"
+"What is the average Joined with a Nickname of wildcats in longmeadow, massachusetts?","SELECT AVG Joined FROM table WHERE Nickname = wildcats AND Location = longmeadow, massachusetts"
+Which Current Conference has a Nickname of lynx?,SELECT Current Conference FROM table WHERE Nickname = lynx
+What league played in 2011?,SELECT League FROM table WHERE Year = 2011
+Which date has a Record of 22-22?,SELECT Date FROM table WHERE Record = 22-22
+Which Opponent has a Date of may 30?,SELECT Opponent FROM table WHERE Date = may 30
+"Which record has an Attendance larger than 12,552, and a Score of 7-0?","SELECT Record FROM table WHERE Attendance > 12,552 AND Score = 7-0"
+Who all played mixed doubles in 2010?,SELECT Mixed doubles FROM table WHERE Year = 2010
+Who played women's singles in the year after 2006 when men's singles was cancelled?,SELECT Women's singles FROM table WHERE Year > 2006 AND Men's singles = cancelled
+Who played Men's singles in 2007?,SELECT Men's singles FROM table WHERE Year = 2007
+"How many lanes have a Nationality of united states, and a Name of aaron peirsol?",SELECT COUNT Lane FROM table WHERE Nationality = united states AND Name = aaron peirsol
+"Which name has a Lane smaller than 3, a Heat larger than 4, and a Time of 2:00.80?",SELECT Name FROM table WHERE Lane < 3 AND Heat > 4 AND Time = 2:00.80
+When was there a result of 8-1 and a score of 8-1?,SELECT Date FROM table WHERE Result = 8-1 AND Score = 8-1
+When was there a result of 5-1?,SELECT Date FROM table WHERE Result = 5-1
+When was there a score of 7-1?,SELECT Date FROM table WHERE Score = 7-1
+What is the result when the score is 8-1?,SELECT Result FROM table WHERE Score = 8-1
+What is the competition type when the score is 1-1?,SELECT Competition FROM table WHERE Score = 1-1
+What was the date of the game after week 6 with the New York Jets as the opponent?,SELECT Date FROM table WHERE Week > 6 AND Opponent = new york jets
+What is the result of the week 1 game?,SELECT Result FROM table WHERE Week = 1
+"How many goals have Lost larger than 35, and Games smaller than 80?",SELECT COUNT Goals for FROM table WHERE Lost > 35 AND Games < 80
+What are the total Goals against with 72 points and more than 37 losses?,SELECT SUM Goals against FROM table WHERE Points = 72 AND Lost > 37
+What are the total number of points with more than 225 goals and a Goals against of 190?,SELECT SUM Points FROM table WHERE Goals for > 225 AND Goals against = 190
+"How many broadband subscribers are there where the population is ~3,644,070?","SELECT Number of Broadband Subscribers FROM table WHERE Population = ~3,644,070"
+"What is the broadband penetration where there are ~355,100 broadband subscribers?","SELECT Broadband Penetration FROM table WHERE Number of Broadband Subscribers = ~355,100"
+"How many broadband subscribers are there where there are ~47,372 users?","SELECT Number of Broadband Subscribers FROM table WHERE Number of Users = ~47,372"
+Which team has a value less than 377 million in Germany with a rank of 17?,SELECT Team FROM table WHERE Value ($M) < 377 AND Country = germany AND Rank = 17
+"What is the lowest rank with a value less than 1,200 million and revenue less than 396 million for Manchester City?","SELECT MIN Rank FROM table WHERE Value ($M) < 1,200 AND Revenue ($M) < 396 AND Team = manchester city"
+What is the average revenue for Bayern Munich with a rank greater than 4?,SELECT AVG Revenue ($M) FROM table WHERE Team = bayern munich AND Rank > 4
+Which country has more than 5% change in a year with a rank of 10?,SELECT Country FROM table WHERE % change on year > 5 AND Rank = 10
+What is the lowest revenue for the rank of 14?,SELECT MIN Revenue ($M) FROM table WHERE Rank = 14
+Name the opponent for jul 31 and score of w 5-1,SELECT Opponent FROM table WHERE Date = jul 31 AND Score = w 5-1
+Name the less for opponent of @cle and record of 67-29,SELECT Loss FROM table WHERE Opponent = @cle AND Record = 67-29
+Name the loss with record of 71-33,SELECT Loss FROM table WHERE Record = 71-33
+Name the date with record of 55-24,SELECT Date FROM table WHERE Record = 55-24
+Name the record with opponent of bos and loss of morris,SELECT Record FROM table WHERE Opponent = bos AND Loss = morris
+"Which catalog did Village Records have on February 14, 2002?","SELECT Catalog FROM table WHERE Label = village records AND Date = february 14, 2002"
+What was the region for the 38xa-5 catalog?,SELECT Region FROM table WHERE Catalog = 38xa-5
+What was the date for the catalog 32xa-112?,SELECT Date FROM table WHERE Catalog = 32xa-112
+What was the date for a catalog formatted in stereo LP?,SELECT Date FROM table WHERE Format = stereo lp
+What date is associated with the label Village Records?,SELECT Date FROM table WHERE Label = village records
+Name the round for southampton opponents,SELECT Round FROM table WHERE Opponents = southampton
+Name the most attendance for 19 february 2005,SELECT MAX Attendance FROM table WHERE Date = 19 february 2005
+Name the sum of attendance for round 3,SELECT SUM Attendance FROM table WHERE Round = round 3
+What team is owned by Mark Smith and has Paul Clapprood as a crew chief?,SELECT Team FROM table WHERE Owner(s) = mark smith AND Crew Chief = paul clapprood
+Who is Mike Wallace's primary Sponsor(s)?,SELECT Primary Sponsor(s) FROM table WHERE Driver(s) = mike wallace
+What driver has Scott Zipadelli as a crew chief?,SELECT Driver(s) FROM table WHERE Crew Chief = scott zipadelli
+What team does Reed Sorenson drive for?,SELECT Team FROM table WHERE Driver(s) = reed sorenson
+Who is Austin Dillon's primary sponsor(s)?,SELECT Primary Sponsor(s) FROM table WHERE Driver(s) = austin dillon
+Who is Eric McClure's and Tristar Motorsports' crew chief?,SELECT Crew Chief FROM table WHERE Team = tristar motorsports AND Driver(s) = eric mcclure
+What is the highest rank from Lane 4?,SELECT MAX Rank FROM table WHERE Lane = 4
+"How many ranks are higher than lane 4 from Great Britain, raced by Margaretha Pedder?",SELECT COUNT Rank FROM table WHERE Lane > 4 AND Nationality = great britain AND Name = margaretha pedder
+What is the lowest rank from Great Britain with a time of 2:10.33?,SELECT MIN Rank FROM table WHERE Nationality = great britain AND Time = 2:10.33
+How many Lanes have a rank higher than 3 with a time of 2:08.11?,SELECT COUNT Lane FROM table WHERE Time = 2:08.11 AND Rank > 3
+Tkkm o te ara rima has a decile less than 4 in what years?,SELECT Years FROM table WHERE Decile < 4 AND Name = tkkm o te ara rima
+What authority does the rototuna area have?,SELECT Authority FROM table WHERE Area = rototuna
+What award was Hannah Gal the recipient of?,SELECT Award FROM table WHERE Recipient = hannah gal
+What is the name of the recipient when the director was Susan Jacobson?,SELECT Recipient FROM table WHERE Director(s) = susan jacobson
+What is the film where Hannah Gal was the director?,SELECT Film FROM table WHERE Director(s) = hannah gal
+What is the film dated 22/3/06 and redhouse lane / perfect world was the recipient?,SELECT Film FROM table WHERE Date = 22/3/06 AND Recipient = redhouse lane / perfect world
+"What is the name of the film with an award of £5,380?","SELECT Film FROM table WHERE Award = £5,380"
+What chassis was paired with climax straight-4?,SELECT Chassis FROM table WHERE Engine = climax straight-4
+What year did Cooper Car Company enter?,SELECT AVG Year FROM table WHERE Entrant = cooper car company
+What year has more than 0 points?,SELECT Year FROM table WHERE Points > 0
+What is the total points before 1963?,SELECT SUM Points FROM table WHERE Year < 1963
+What was the genre of Queen (an artist from the United Kingdom)?,SELECT Genre FROM table WHERE Country of origin = united kingdom AND Artist = queen
+What is the number of claimed sales in the rock genre?,SELECT Claimed sales FROM table WHERE Genre = rock
+What was the earliest release-year of the first charted record of Abba?,SELECT MIN Release-year of first charted record FROM table WHERE Artist = abba
+What was the active period for the pop genre?,SELECT Period active FROM table WHERE Genre = pop
+What point had team Lotus whit the lotus 33 chassis in 1964?,SELECT Points FROM table WHERE Chassis = lotus 33 AND Entrant = team lotus AND Year = 1964
+Which entrant before 1965 scored more than 0 point with the lotus 25 chassis?,SELECT Entrant FROM table WHERE Year < 1965 AND Points > 0 AND Chassis = lotus 25
+Which engine scored 9 points?,SELECT Engine FROM table WHERE Points = 9
+What chassis did team lotus use after 1964?,SELECT Chassis FROM table WHERE Entrant = team lotus AND Year > 1964
+What is the value Others% when the value Others# is greater than 147 and the value Kerry% is 39.6%?,SELECT Others% FROM table WHERE Others# > 147 AND Kerry% = 39.6%
+"What is the total number of the value Others#, when the county is Langlade, and when the value Bush# is greater than 6,235?","SELECT COUNT Others# FROM table WHERE County = langlade AND Bush# > 6,235"
+"What is the average value of Bush# when the value for Others# is greater than 57, and the value for Bush% is 49.2%?",SELECT AVG Bush# FROM table WHERE Others# > 57 AND Bush% = 49.2%
+"What is the county when the value for Others% is 1.1%, and the value for Kerry# is greater than 19,177, and the value for Bush% is 52.1%?","SELECT County FROM table WHERE Others% = 1.1% AND Kerry# > 19,177 AND Bush% = 52.1%"
+What is the date the Fubuki ship laid down?,SELECT Laid down FROM table WHERE Name = fubuki
+What is the launched date for the Harusame ship?,SELECT Launched FROM table WHERE Name = harusame
+The game taking place in Lille had what as a score?,SELECT Score FROM table WHERE Location = lille
+A competition of test taking place on 23 Apr 1988 had what as a score?,SELECT Score FROM table WHERE Competition = test AND Date = 23 apr 1988
+"On 11 Feb 1990, the competition is listed as what?",SELECT Competition FROM table WHERE Date = 11 feb 1990
+The competition that took place on 4 Apr 1997 ended with what as the score?,SELECT Score FROM table WHERE Date = 4 apr 1997
+The competition located in Northampton had a resulting score of what?,SELECT Score FROM table WHERE Location = northampton
+What category did MCG get a nominee in?,SELECT Category FROM table WHERE Label = mcg AND Result = nominee
+What genre was Music in the Air?,SELECT Genre FROM table WHERE Title = music in the air
+Which opponent has a record of 52-52?,SELECT Opponent FROM table WHERE Record = 52-52
+What is the record as of July 22?,SELECT Record FROM table WHERE Date = july 22
+What was the highest number played when there were 21 goals conceded and a draw greater than 3?,SELECT MAX Played FROM table WHERE Goals Conceded = 21 AND Draw > 3
+What were the total number of points when the amount of goals scored was less than 20?,SELECT COUNT Points FROM table WHERE Goals Scored < 20
+"What were the total number of points when there was a lost larger than 6, when the team was Once Municipal, and when the number of goals scored was less than 8?",SELECT COUNT Points FROM table WHERE Lost > 6 AND Team = once municipal AND Goals Scored < 8
+What was the highest number of points scored when there was a draw of 2 and when the amount played was 18?,SELECT MAX Points FROM table WHERE Draw = 2 AND Played < 18
+What was the total number of places in which the draw was less than 4 and the amount lost was less than 6?,SELECT COUNT Place FROM table WHERE Draw < 4 AND Lost < 6
+What is the lowest rank with poland as the nationality and a time greater than 55.34?,SELECT MIN Rank FROM table WHERE Nationality = poland AND Time > 55.34
+"Which name has a lane smaller than 7, and a time greater than 54.32 with germany as the nationality and a rank less than 5?",SELECT Name FROM table WHERE Lane < 7 AND Time > 54.32 AND Nationality = germany AND Rank < 5
+Which average lane has 54.95 as a time?,SELECT AVG Lane FROM table WHERE Time = 54.95
+Which average time has eithan urbach as a name with a lane bigger than 2?,SELECT AVG Time FROM table WHERE Name = eithan urbach AND Lane > 2
+What year was the brabham bt46 bt48 bt49 Chassis common?,SELECT AVG Year FROM table WHERE Chassis = brabham bt46 bt48 bt49
+How high did Arnold Palmer score in 1962?,SELECT MAX Score FROM table WHERE Player = arnold palmer
+Which result has a Venue of ulsan?,SELECT Result FROM table WHERE Venue = ulsan
+Which competition has a Date of 2007-08-22?,SELECT Competition FROM table WHERE Date = 2007-08-22
+Which result has a Date of 2007-08-22?,SELECT Result FROM table WHERE Date = 2007-08-22
+What's the 2004 tournament that has a 2R in 2000?,SELECT 2004 FROM table WHERE 2000 = 2r
+What is the 1999 tournament that has a Q1 in 2003 and a Q3 in 2002?,SELECT 1999 FROM table WHERE 2003 = q1 AND 2002 = q3
+What is the 2004 tournament that has a Q1 of 2011?,SELECT 2004 FROM table WHERE 2011 = q1
+What was the hometown of the contestant who was a professional mixologist?,SELECT Hometown FROM table WHERE Profession = mixologist
+"What is the average Year when there was a cosworth straight-4 engine, and the Entrant was ron harris / team lotus?",SELECT AVG Year FROM table WHERE Engine = cosworth straight-4 AND Entrant = ron harris / team lotus
+What is the name of the Entrant that has a Chassis of lotus 25,SELECT Entrant FROM table WHERE Chassis = lotus 25
+What was the engine when the chassis was a porsche 718??,SELECT Engine FROM table WHERE Chassis = porsche 718
+What is the number of points when there was a BMW 269 F2 chassis earlier than 1969?,SELECT COUNT Points FROM table WHERE Chassis = bmw 269 f2 AND Year < 1969
+What engine was in the lotus 44 f2 Chassis?,SELECT Engine FROM table WHERE Chassis = lotus 44 f2
+What year was there a lotus 25 Chassis?,SELECT Year FROM table WHERE Chassis = lotus 25
+what is the lowest rank for the netherlands in lane less than 4?,SELECT MIN Rank FROM table WHERE Nationality = netherlands AND Lane < 4
+Name the average total with league cup more than 0 and other more than 0,SELECT AVG Total FROM table WHERE League Cup > 0 AND Other > 0
+"Name the least other for league cup less than 0, FA cup more than 0 and league of 2 with total less than 14",SELECT MIN Other FROM table WHERE Total < 14 AND League = 2 AND FA Cup > 0 AND League Cup < 0
+Name the sum of FA cup when league cup is less than 0,SELECT SUM FA Cup FROM table WHERE League Cup < 0
+"Which state's delegate is from Lexington, Ky and is 5'4"" tall?","SELECT State FROM table WHERE Height = 5'4"" AND Hometown = lexington, ky"
+"What is the height of the delegate whose hometown is Renton, WA?","SELECT Height FROM table WHERE Hometown = renton, wa"
+Is there a Position for Notes 53.96?,SELECT Position FROM table WHERE Notes = 53.96
+"Is there a Venus that's a year later than 2002, with an Event of 4x400m relay in 4th Position?",SELECT Venue FROM table WHERE Event = 4x400m relay AND Year > 2002 AND Position = 4th
+What Event goes with Notes 53.76?,SELECT Event FROM table WHERE Notes = 53.76
+On what date did they have a record of 12-17?,SELECT Date FROM table WHERE Record = 12-17
+What Best Bowl is it that has 151 Matches and 1 100s?,SELECT Best Bowl FROM table WHERE 100s = 1 AND Matches = 151
+What engine did the Team Lotus have after 1965?,SELECT Engine FROM table WHERE Entrant = team lotus AND Year > 1965
+What chassis did the BRM V8 engine have?,SELECT Chassis FROM table WHERE Engine = brm v8
+What was the highest number of points in 1966?,SELECT MAX Points FROM table WHERE Year = 1966
+What is the greatest number of losses a team that played fewer than 25 games in 2010 had?,SELECT MAX Losses FROM table WHERE Games < 25 AND Season = 2010
+What is the average number of points for a team that played 17 games and had more than 15 losses?,SELECT AVG Points FROM table WHERE Games = 17 AND Losses > 15
+How many laps did gunnar nilsson drive?,SELECT SUM Laps FROM table WHERE Driver = gunnar nilsson
+Who built james hunt's car that went 79 laps?,SELECT Constructor FROM table WHERE Laps = 79 AND Driver = james hunt
+What is the 2014 Santander together with 2003 Cadiz of Finn ?,SELECT 2014 Santander FROM table WHERE 2003 Cadiz = finn
+WHich is 2014 Santander included 2011 Perth of 470?,SELECT 2014 Santander FROM table WHERE 2011 Perth = 470
+Which 2007 Cascais has 2014  RS:X Santander.,SELECT 2007 Cascais FROM table WHERE 2014 Santander = rs:x
+Which Discipline has a 2007 laser radial Cascais ?,SELECT Discipline FROM table WHERE 2007 Cascais = laser radial
+How much did the Modern Pentathlon III Series coin weigh?,SELECT Weight FROM table WHERE Series = iii series AND Reverse = modern pentathlon
+What is the obverse of the archery coin?,SELECT Obverse FROM table WHERE Reverse = archery
+What is the denomination of the III Series?,SELECT Denomination FROM table WHERE Series = iii series
+What is the diameter of the Archery Reverse coin?,SELECT Diameter FROM table WHERE Reverse = archery
+Who wrote the episode with a production code greater than 1.4 direcyed by rick wallace?,SELECT Written by FROM table WHERE Prod. code > 1.4 AND Directed by = rick wallace
+Who wrote the episode that was directed by dan lerner?,SELECT Written by FROM table WHERE Directed by = dan lerner
+"What is the average total of player Simon Donnelly, with a Scottish Cup greater than 0?",SELECT AVG Total FROM table WHERE Player = simon donnelly AND Scottish Cup > 0
+"What is the Challenge Cup total with a League of 1, Player Simon Storey, and a Total greater than 1?",SELECT SUM Challenge Cup FROM table WHERE League = 1 AND Player = simon storey AND Total > 1
+"What is the highest total of Player Damon Gray, with a Challenge Cup less than 0?",SELECT MAX Total FROM table WHERE Player = damon gray AND Challenge Cup < 0
+"What is the least for Scottish Cup with a Challenge Cup greater than 0, Player Paul Keegan, and League Cup greater than 0?",SELECT MIN Scottish Cup FROM table WHERE Challenge Cup > 0 AND Player = paul keegan AND League Cup > 0
+"What is the greatest Challenge Cup with a League smaller than 2, Total greater than 2, and a League Cup greater than 1?",SELECT MAX Challenge Cup FROM table WHERE League < 2 AND Total > 2 AND League Cup > 1
+"What is the highest Total with a League Cup greater than 0, Player Gary Harkins, and Scottish Cup greater than 0?",SELECT MAX Total FROM table WHERE League Cup > 0 AND Player = gary harkins AND Scottish Cup > 0
+"Which result has a Venue of away, and an Opponent of marbella?",SELECT Result FROM table WHERE Venue = away AND Opponent = marbella
+Which venue has a Date of 28 july 2007?,SELECT Venue FROM table WHERE Date = 28 july 2007
+What is the result with a home venue?,SELECT Result FROM table WHERE Venue = home
+Which Date has a Result of 0–0?,SELECT Date FROM table WHERE Result = 0–0
+"Which date has a Result of 5–0, and an Opponent of tooting & mitcham?",SELECT Date FROM table WHERE Result = 5–0 AND Opponent = tooting & mitcham
+Name the total number of goals which have played more than 44,SELECT COUNT Goals for FROM table WHERE Played > 44
+Name the most draws when goals against is more than 56 and wins is more than 14,SELECT MAX Draws FROM table WHERE Goals against > 56 AND Wins > 14
+Name the least goals when position is more than 4 and draws is more than 11,SELECT MIN Goals for FROM table WHERE Position > 4 AND Draws > 11
+Name the most wins which have clubbed of elche cf and goals against more than 43,SELECT MAX Wins FROM table WHERE Club = elche cf AND Goals against > 43
+"Birth Date of 8 November 1980, and a Weight smaller than 93 has what sum of a shirt number?",SELECT SUM Shirt No FROM table WHERE Birth Date = 8 november 1980 AND Weight < 93
+"Shirt number of 18, and a Height larger than 195 has how much weight?",SELECT COUNT Weight FROM table WHERE Shirt No = 18 AND Height > 195
+Name the To par for leland gibson,SELECT To par FROM table WHERE Player = leland gibson
+Name the place for ed oliver,SELECT Place FROM table WHERE Player = ed oliver
+Name the player with score of 74-68-71=213,SELECT Player FROM table WHERE Score = 74-68-71=213
+Name the To par for dick metz,SELECT To par FROM table WHERE Player = dick metz
+Who won the Women's singles in 2013?,SELECT Women's singles FROM table WHERE Year = 2013
+Who won the Men's doubles when there was no competition in the Men's singles?,SELECT Men's doubles FROM table WHERE Men's singles = no competition
+What year was there no competition in Mixed Doubles?,SELECT Year FROM table WHERE Mixed doubles = no competition
+What year did Lonneke Janssen win the Women's singles?,SELECT Year FROM table WHERE Women's singles = lonneke janssen
+what was the score for the game on 14 april 2001?,SELECT Score FROM table WHERE Date = 14 april 2001
+what is the score for the game on 21 april 2001?,SELECT Score FROM table WHERE Date = 21 april 2001
+what is the competition on 21 april 2001?,SELECT Competition FROM table WHERE Date = 21 april 2001
+Who is the opponent the Seattle Seahawks played when their record was 1-3?,SELECT Opponent FROM table WHERE Record = 1-3
+"On what date was the crowd size of 71,789?","SELECT Date FROM table WHERE Attendance = 71,789"
+Which week did the Seattle Seahawks have a record of 6-6?,SELECT AVG Week FROM table WHERE Record = 6-6
+"What was the final score (result) for the game where 51,100 attended?","SELECT Result FROM table WHERE Attendance = 51,100"
+"Where was the game held when the attendance was 56,770?","SELECT Game site FROM table WHERE Attendance = 56,770"
+"Which week was the game held at Kingdome on October 13, 1991?","SELECT MIN Week FROM table WHERE Game site = kingdome AND Date = october 13, 1991"
+Who was the opponent at the game that had a loss of Harden (9-6)?,SELECT Opponent FROM table WHERE Loss = harden (9-6)
+Name the sum of Laps for co-drivers of oliver gavin jan magnussen and class of gts with year less than 2004,SELECT SUM Laps FROM table WHERE Co-Drivers = oliver gavin jan magnussen AND Class = gts AND Year < 2004
+Name the team with laps more than 333 and year less than 2004,SELECT Team FROM table WHERE Laps > 333 AND Year < 2004
+Name the team with Laps of 333,SELECT Team FROM table WHERE Laps = 333
+What is the points for where the tries for is 29?,SELECT Points for FROM table WHERE Tries for = 29
+What is the points for of Club of penallta rfc?,SELECT Points for FROM table WHERE Club = penallta rfc
+What is the try bonus for ynysybwl rfc?,SELECT Try bonus FROM table WHERE Club = ynysybwl rfc
+What is the points against for the team that played 22 and lost 6?,SELECT Points against FROM table WHERE Played = 22 AND Lost = 6
+What is the score of  Tommy Bolt,SELECT MIN Score FROM table WHERE Player = tommy bolt
+WHich Places have a score smaller than 69?,SELECT Place FROM table WHERE Score < 69
+What is the To Par that has Tommy Bolt with a Place of t6?,SELECT To par FROM table WHERE Place = t6 AND Player = tommy bolt
+Who is the entrant with a cooper t43 chassis before 1958?,SELECT Entrant FROM table WHERE Year < 1958 AND Chassis = cooper t43
+Name the 2006 when the 2010 is 27,SELECT 2006 FROM table WHERE 2010 = 27
+Which main cast seasons were portrayed by Joe Jonas?,SELECT Main cast seasons FROM table WHERE Portrayed by = joe jonas
+How many episodes were portrayed by Nick Jonas?,SELECT COUNT # of episodes FROM table WHERE Portrayed by = nick jonas
+How many episodes had the character of Nick Lucas?,SELECT SUM # of episodes FROM table WHERE Character = nick lucas
+What character is portrayed by Joe Jonas?,SELECT Character FROM table WHERE Portrayed by = joe jonas
+What was the extra info for the Commonwealth Games?,SELECT Extra FROM table WHERE Tournament = commonwealth games
+What year was the Commonwealth Games?,SELECT SUM Year FROM table WHERE Tournament = commonwealth games
+What job is at red bank?,SELECT Occupation FROM table WHERE Residence = red bank
+What year did Ecurie Bleue score more than 0 points?,SELECT AVG Year FROM table WHERE Pts. > 0 AND Entrant = ecurie bleue
+What is the starting point of the north/south operating Palafox Street route?,SELECT Starting Point FROM table WHERE Operates = north/south AND Name = palafox street
+Which bi-directional route has a terminus at Ecat/Rosa Park Transit Center?,SELECT Name FROM table WHERE Direction = bi-directional AND Terminus = ecat/rosa park transit center
+Which route has a terminus of pine Forest?,SELECT Name FROM table WHERE Terminus = pine forest
+What is the starting point of the route that has its terminus at Ecat/Rosa Park Transit Center?,SELECT Starting Point FROM table WHERE Terminus = ecat/rosa park transit center
+What is the direction of the route that stars at downtown transit center and has a terminus point at Pensacola Beach?,SELECT Direction FROM table WHERE Starting Point = downtown transit center AND Terminus = pensacola beach
+Where does the Bayou Blvd./12th Avenue route that has a terminus at the downtown transit center operate?,SELECT Operates FROM table WHERE Terminus = downtown transit center AND Name = bayou blvd./12th avenue
+How many full professors work under Hartmut Kliemt with more than 0 lecturers?,SELECT COUNT Full professors FROM table WHERE Head = hartmut kliemt AND Lecturers > 0
+What is the least amount of lecturers in the accounting department with less than 5 full professors?,SELECT MIN Lecturers FROM table WHERE Department = accounting AND Full professors < 5
+What is the average number of honorary professors in the economics department with 1 lecturer?,SELECT AVG Honorary professors FROM table WHERE Lecturers = 1 AND Department = economics
+What Loss occured on the Date of June 12?,SELECT Loss FROM table WHERE Date = june 12
+"What Loss had an Attendance of 17,675?","SELECT Loss FROM table WHERE Attendance = 17,675"
+"What Loss had an Attendance of 17,675?","SELECT Loss FROM table WHERE Attendance = 17,675"
+On what Date had a Score of 5-2 and a Loss of Greinke (1-2)?,SELECT Date FROM table WHERE Score = 5-2 AND Loss = greinke (1-2)
+"What was the Score that has an Attendance of 39,446?","SELECT Score FROM table WHERE Attendance = 39,446"
+What was the Loss that had a Score of 9-1?,SELECT Loss FROM table WHERE Score = 9-1
+"What counties represented have a democratic committee, and a committee of ways and means?",SELECT Counties Represented FROM table WHERE Party = democratic AND Committee = ways and means
+What is the average first elected year that has a district of 11 and a committee of environmental matters?,SELECT AVG First Elected FROM table WHERE District = 11 AND Committee = environmental matters
+"What is the total number of First elected that has a country represented in Baltimore county, a district of 06.0 6, and a committee of economic matters?",SELECT COUNT First Elected FROM table WHERE Counties Represented = baltimore county AND District = 06.0 6 AND Committee = economic matters
+"What district has counties represented by Baltimore county, a committee of health and government operations, and a first elected smaller than 2002?",SELECT District FROM table WHERE Counties Represented = baltimore county AND Committee = health and government operations AND First Elected < 2002
+"What is the Highest first elected year that has a district of 06.0 6, and a committee of economic matters?",SELECT MAX First Elected FROM table WHERE District = 06.0 6 AND Committee = economic matters
+Who was from Morocco and scored 6 goals?,SELECT Name FROM table WHERE Goals = 6 AND Nationality = morocco
+"Who has the highest ranking from  1996–13, and more than 17 goals?",SELECT MAX Ranking FROM table WHERE Years = 1996–13 AND Goals > 17
+What was the average ranking of Saudi Arabia in the years of 2000–?,SELECT AVG Ranking FROM table WHERE Nationality = saudi arabia AND Years = 2000–
+Which nation had 14 goals?,SELECT Nationality FROM table WHERE Goals = 14
+What nationality is hamzah idris?,SELECT Nationality FROM table WHERE Name = hamzah idris
+Who had fewer goals than 4 during the years of 1996–13?,SELECT MIN Goals FROM table WHERE Ranking < 4 AND Years = 1996–13
+what is the lowest top-25 when the events is less than 17 and top-5 is more than 0?,SELECT MIN Top-25 FROM table WHERE Events < 17 AND Top-5 > 0
+what is the top-5 when the tournament is totals and the top-25 is more than 4?,SELECT AVG Top-5 FROM table WHERE Tournament = totals AND Top-25 > 4
+what is the average number of events when the top-5 is less than 1 and top 25 more than 1,SELECT AVG Events FROM table WHERE Top-5 < 1 AND Top-25 > 1
+"what is the highest top-5 when the top-25 is less than 4, cuts made is more than 3 and wins is 0?",SELECT MAX Top-5 FROM table WHERE Top-25 < 4 AND Cuts made > 3 AND Wins < 0
+what is the total number of times the tournament was pga championship and evens is less than 4?,SELECT COUNT Top-5 FROM table WHERE Tournament = pga championship AND Events < 4
+What year did Elf Team Tyrrell have 34 points?,SELECT AVG Year FROM table WHERE Entrant = elf team tyrrell AND Points = 34
+"After 1972, how many points did Marlboro Team Alfa Romeo have?",SELECT Points FROM table WHERE Year > 1972 AND Entrant = marlboro team alfa romeo
+What chassis had 39 points?,SELECT Chassis FROM table WHERE Points = 39
+How many points did the Ford V8 with a Tyrrell 007 have?,SELECT Points FROM table WHERE Engine = ford v8 AND Chassis = tyrrell 007
+"Before 1976 and with 12 points, what chassis did the Ford V8 have?",SELECT Chassis FROM table WHERE Engine = ford v8 AND Year < 1976 AND Points = 12
+What year did Elf Team Tyrrell have 39 points and a Tyrrell 007 Chassis?,SELECT SUM Year FROM table WHERE Entrant = elf team tyrrell AND Points = 39 AND Chassis = tyrrell 007
