@@ -1,0 +1,12 @@
+data, summary
+product: shoes tv phone laptop | region: south east west north | sales: 100 200 300 400, shoes sold in south | 200 tv sold in east | 300 phone sold in west | 400 laptop sold in north
+car_name: toyota honda nissan mazda | color: red blue green yellow | price: 100 200 300 400, toyota red car sold for 100 | 200 honda blue car sold for 200 | 300 nissan green car sold for 300 | 400 mazda yellow car sold for 400
+bike_name: honda yamaha suzuki kawasaki | mileage: 100 200 300 400 | sales: 450 550 650 750, 450 honda bike sold for 100 miles | 550 yamaha bike sold for 200 miles | 650 suzuki bike sold for 300 miles | 750 kawasaki bike sold for 400 miles
+book_name: harry potter lord of the rings game of thrones twilight | author: jk rowling tolkien martin meyer | sales: 100 200 300 400, 100 harry potter book sold by jk rowling | 200 lord of the rings book sold by tolkien | 300 game of thrones book sold by martin | 400 twilight book sold by meyer
+employee_name: john smith jill jones | department: sales marketing hr | salary: 789.23 123.45 456.78, 789.23 john smith works in sales and earns 789.23 | 123.45 jill jones works in marketing and earns 123.45 | 456.78 john smith works in hr and earns 456.78
+pen_company: pilot parker bic | height: 5cm 6cm 7cm | average_age: 10 20 30, pilot pen is 5cm tall and has an average age of 10 | 20 parker pen is 6cm tall and has an average age of 20 | 30 bic pen is 7cm tall and has an average age of 30
+animal_name: dog cat bird fish | age: 1 2 3 4 | weight: 10 20 30 40, dog is 1 year old and weighs 10 | 20 cat is 2 years old and weighs 20 | 30 bird is 3 years old and weighs 30 | 40 fish is 4 years old and weighs 40
+fruit_name: apple banana orange | color: red yellow green | price: 10 20 30, apple is red and costs 10 | 20 banana is yellow and costs 20 | 30 orange is green and costs 30
+vegetable_name: carrot potato onion | calories: 10 20 30 | price: 10 20 30, carrot has 10 calories and costs 10 | 20 potato has 20 calories and costs 20 | 30 onion has 30 calories and costs 30
+flower_name: rose daisy tulip | smell: sweet floral spicy | weight: 10 20 30, rose smells sweet and weighs 10 | 20 daisy smells floral and weighs 20 | 30 tulip smells spicy and weighs 30
+headphones_company: sony beats bose | price: 89, 74, 99 | weight: 10 20 30, sony headphones cost 89 and weigh 10 | 20 beats headphones cost 74 and weigh 20 | 30 bose headphones cost 99 and weigh 30
